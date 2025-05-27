@@ -1,147 +1,95 @@
 = Utredningsmetode fjernmetastaser
 
-
 == Metadata
 
-
-TemplateId:: Utredningsmetode fjernmetastaser
-
-
-Archetype:: openEHR-EHR-CLUSTER.clinical_evidence.v1
-
-
-
+*TemplateId:* Utredningsmetode fjernmetastaser  
+*Archetype:* openEHR-EHR-CLUSTER.clinical_evidence.v1
 
 :toc:
 
-
-
-
-5+a|*Utredningsmetode fjernmetastaser* + 
+[cols="5a"]
+|===
+|*Utredningsmetode fjernmetastaser*  
 CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
 
+[NOTE]
+====
+*Designkommentar:*  
+Funn av fjernmetastase i Klinisk grunnlag-arketypen slik at man kan legge inn metoden for hvordan man har funnet denne, samt den anatomiske lokalisasjonen for hvor metastasen befinner seg.
+====
 
-Designkommentar:
-Funn av fjernmetastase i Klinisk grunnlag arketypen slik at man kan legge inn metoden for hvordan man har funnet denne samt at man kan legge inn anatomisk lokalisasjon for hvor metastasen befinner seg.
-|at0003| 0..1| DV_CODED_TEXT | Grunnlag
-a|
-* Fjernmetastase (SNOMED-CT: 399409002)
+| at0003 | 0..1 | DV_CODED_TEXT | Grunnlag
+| * Fjernmetastase (SNOMED-CT: 399409002)
 
+[NOTE]
+====
+*Designkommentar:*  
+Denne vises ikke i skjermbildet.  
+SNOMED-CT: 399409002 – *Distant metastasis present (finding)*
+====
 
-Designkommentar:
-Denne visis ikke i skjermbildet. 
-399409002 | Distant metastasis present | (finding)
-|at0022| 0..*| DV_CODED_TEXT | Metode
-a|
-* Palpasjon (SNOMED-CT: 113011001)
-* Bildediagnostikk (SNOMED-CT: 363679005)
-* Cytologi (SNOMED-CT: 116147009)
-* Biopsi (SNOMED-CT: 86273004)
-* Reseksjon (SNOMED-CT: 65801008)
-* Annet (SNOMED-CT: 74964007)
-* Ukjent (SNOMED-CT: 69466000)
+| at0022 | 0..* | DV_CODED_TEXT | Metode
+| * Palpasjon (SNOMED-CT: 113011001)  
+  * Bildediagnostikk (SNOMED-CT: 363679005)  
+  * Cytologi (SNOMED-CT: 116147009)  
+  * Biopsi (SNOMED-CT: 86273004)  
+  * Reseksjon (SNOMED-CT: 65801008)  
+  * Annet (SNOMED-CT: 74964007)  
+  * Ukjent (SNOMED-CT: 69466000)
 
+[NOTE]
+====
+*Designkommentar:*  
+Typen undersøkelse eller utredning som er utført for å påvise fjernmetastasen.
+====
 
-Designkommentar:
-Typen undersøkelse eller utredning som er utført for å komme fram til funn av fjernmetastasen.
+| at0001 | 0..1 | DV_TEXT | Spesifiser annen metode
+|
 
-|at0001| 0..1| DV_TEXT | Spesifiser annen metode
-a|
-
-
+[NOTE]
+====
 Fritekstfelt for å beskrive metode som ikke står i listen.
-5+a|*M anatomisk lokalisering Fjerne lymfeknuter* + 
+====
+
+|===
+
+== Anatomisk lokaliseringer
+
+=== M anatomisk lokalisering Fjerne lymfeknuter  
 CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
 
+[cols="5a"]
+|===
+| at0001 | 1..1 | DV_CODED_TEXT | Navn på kroppssted
+| * Lymfeknute (fjerne) (SNOMED-CT: 59441001)
 
-Designkommentar:
-Dette clusteret må gjentas for hver anatomisk lokalisering.
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Lymfeknute (fjerne) (SNOMED-CT: 59441001)
-|at0065| 0..1| DV_CODED_TEXT | Spesifikt sted
-a|
-* Distant (SNOMED-CT: 261007001)
+| at0065 | 0..1 | DV_CODED_TEXT | Spesifikt sted
+| * Distant (SNOMED-CT: 261007001)
 
+[NOTE]
+====
+*Designkommentar:*  
+Skal ikke vises i skjermbildet, men lagres om man velger lymfeknuter.  
+Fant ingen spesifikk SNOMED-CT-kode for "fjerne lymfeknuter", så det er brukt:  
+- Navn på kroppssted: 59441001 – *Lymfeknute (fjerne)*  
+- Spesifikt sted: 261007001 – *Distant (qualifier value)*
+====
+|===
 
-Designikommentar:
-Skal ikke vises i skjermbildet, men lagres om man velger lymfeknuter. 
+include::anat-locations.adoc[]
 
-Fant jeg ingen snomed-ct kode med fjerne lymfeknuter anatomisk lokalisasjon. Har derfor lagt inn 
-Navn på korppsted = 59441001- lymfeknute (fjerne)   
-Spesifikt sted = 261007001 |  Distant (qualifier value) (skal ikke vises i skjermbildet) 
-5+a|*M anatomisk lokalisering Aksillær lymfeknute* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Aksillær lymfeknute (SNOMED-CT: 68171009)
-5+a|*M anatomisk lokalisering Skjelett* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Skjelett (SNOMED-CT: 113192009)
-5+a|*M anatomisk lokalisering Bløtvev* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Bløtvev (SNOMED-CT: 87784001)
-5+a|*M anatomisk lokalisering Hud* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Hud (SNOMED-CT: 39937001)
-5+a|*M anatomisk lokalisering Musklatur* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Muskulatur (SNOMED-CT: 71616004)
-5+a|*M anatomisk lokalisering Lunge* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Lunge (SNOMED-CT: 39607008)
-5+a|*M anatomisk lokalisering Hjerne* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Hjerne (SNOMED-CT: 12738006)
-5+a|*M anatomisk lokalisering Lever* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Lever (SNOMED-CT: 10200004)
-5+a|*M anatomisk lokalisering Pleura* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Pleura (SNOMED-CT: 3120008)
-5+a|*M anatomisk lokalisering Magesekk* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Magesekk (SNOMED-CT: 69695003)
-5+a|*M anatomisk lokalisering Tarm* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Tarm (SNOMED-CT: 113276009)
-5+a|*M anatomisk lokalisering Urinveier* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Urinveier (SNOMED-CT: 431938005)
-5+a|*M anatomisk lokalisering Annet* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
-a|
-* Annet kroppssted (speisfiser) (SNOMED-CT: 74964007)
+== Annet
 
+[cols="5a"]
+|===
+| at0023 | 0..1 | DV_TEXT | Spesifiser annet
+|
 
-Designkommentar:
-Brukt SNOMED-CT koden 385421009 | Anatomic location of metastatic spread of malignant neoplasm (observable entity) |for å kunne angi hvor denne metastasen er. Må da bruke beskrivelsesfeltet for å legge få svar på denne verdien.
-|at0023| 0..1| DV_TEXT | Spesifiser annet
-a|
-
-
-Designkommentar:
-For å beskrive annen koroppssted metastasen er lokalisert. 
+[NOTE]
+====
+*Designkommentar:*  
+For å beskrive annet kroppssted metastasen er lokalisert.  
+Brukt SNOMED-CT-kode: 385421009 – *Anatomic location of metastatic spread of malignant neoplasm (observable entity)*  
+Beskrivelsen må gis i dette feltet.
+====
+|===
