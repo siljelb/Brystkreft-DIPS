@@ -1144,7 +1144,7 @@ a|
 
 
 Designkommentar:
-Har brukt koden: 1255078008 |Percent of cell nuclei positive for proliferation marker protein Ki-67 in primary malignant neoplasm by immunohistochemistry (observable entity)|.
+Har brukt koden: 1255078008 Percent of cell nuclei positive for proliferation marker protein Ki-67 in primary malignant neoplasm by immunohistochemistry (observable entity).
 
 
 |at0001| 0..1| DV_QUANTITY | Prosent Ki-67
@@ -1693,7 +1693,7 @@ a|
 
 
 Designkommentar:
-Har brukt koden: 1255078008 |Percent of cell nuclei positive for proliferation marker protein Ki-67 in primary malignant neoplasm by immunohistochemistry (observable entity)|.
+Har brukt koden: 1255078008 Percent of cell nuclei positive for proliferation marker protein Ki-67 in primary malignant neoplasm by immunohistochemistry (observable entity).
 |at0001| 0..1| DV_QUANTITY | Prosent Ki-67
 |
 
