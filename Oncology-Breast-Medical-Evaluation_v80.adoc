@@ -1,7 +1,9 @@
+:toc:
+:toc-title: Innholdsfortegnelse
+:toclevels: 2
+
 = Oncology-General-Reception-Journal
 
-
-:toc:
 
 == Metadata
 
@@ -10,11 +12,6 @@ TemplateId:: Oncology-Breast-Medical-Evaluation_v80
 
 
 Archetype:: openEHR-EHR-COMPOSITION.encounter.v1
-
-
-
-
-:toc:
 
 
 
@@ -44,7 +41,8 @@ CLUSTER: _at0003_
 |at0006| 0..1| DV_COUNT | Patch
 |
 |====
-== Utredning
+
+= Utredning
 == Anamnese
 [options="header", cols="3,3,5,5,30"]
 |====
@@ -359,7 +357,7 @@ Elementet må ikke renavnes i templatet.
 a|
 |====
 == Bildediagnostikk
-== Kartlegging bildediagnostikk
+=== Kartlegging bildediagnostikk
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
@@ -634,8 +632,8 @@ a|
 * Skjelett (SNOMED-CT: 113192009)
 |====
 == Lesjon/funn i bryst og aksille høyre
-== Templat-overskrift
-== Bildediagnostisk svar
+=== Templat-overskrift
+=== Bildediagnostisk svar
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
@@ -811,7 +809,7 @@ a|
 Designkommentar:
 Om markøren er lagt inn eller ønskes lagt inn.
 |====
-== Laboratorieresultat
+=== Laboratorieresultat
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
@@ -1266,8 +1264,8 @@ a|
 Denne identifikatoren kalles også ofte "rekvisisjonsnummer" eller "remissenummer".
 |====
 == Lesjon/funn i bryst og aksille venstre
-== Templat-overskrift
-== Bildediagnostisk svar
+=== Templat-overskrift
+=== Bildediagnostisk svar
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
@@ -1399,7 +1397,7 @@ a|
 
 Om markøren er lagt inn eller ønskes lagt inn.
 |====
-== Laboratorieresultat
+=== Laboratorieresultat
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
@@ -1796,7 +1794,7 @@ CLUSTER: _at0094_
 a|
 |====
 == Gentest
-== Kartlegging genetisk biomarkør
+=== Kartlegging genetisk biomarkør
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
@@ -1834,7 +1832,7 @@ a|
 * at0037 -> Nei 
 * at0039 -> Ukjent 
 |====
-== Biomarkør genetikk
+=== Biomarkør genetikk
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
@@ -1872,7 +1870,7 @@ a|
 Denne identifikatoren kalles også ofte "rekvisisjonsnummer" eller "remissenummer".
 |====
 == Problem/diagnose utredning
-== Problem/diagnose (inkl TNM)
+=== Problem/diagnose (inkl TNM)
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
