@@ -1,0 +1,3473 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "a941d11e-7ba4-481a-ab78-0a2847fb5e4b",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-06-16",
+      "name" : "Liv Laugen",
+      "organisation" : "Oslo universitetssykehus",
+      "email" : "liv.laugen@ous-hf.no"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "release_candidate"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "13.0.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "8cd34d72591e142364a434e0891251b4",
+      "PARENT:MD5-CAM-1.0.1" : "37053661135B974855AAA356073EA23A",
+      "original_language" : "ISO_639-1::nb"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "For å registrere et individs arbeidsstatusmm samt yrke og varighet på sykemelding, i forbindelse med prosjektet Strukturert Kreftjournal.",
+        "keywords" : [ "arbeid, yrke, sykemelding" ],
+        "use" : "Brukes for å registrere et individs arbeidsstatus, samt yrke og varighet på sykemelding, i forbindelse med prosjektet Strukturert kreftjournal.\n\nVerdisettet for dataelementet \"Arbeidsstatus\" er standardisert basert på krav utarbeidet av Helsedirektoratet. \n\nDette templatet vil bli brukt i prosjektet Strukturert Kreftjournal under sosialanamnese.\n\nSmåtemplatet med det standardiserte verdisettet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om arbeidsstatus.\n\nVerdisettet med tilhørende forklaring i dette templatet for arbeidsstatus er:\n- I arbeid = Alle som har jobb og identifiserer seg med at deres hovedkategori er å være i arbeid. Både fulltid og deltid.\n- Ikke i arbeid = Alle som ikke har et arbeidsforhold: hjemmeværende, permitterte, arbeidssøkende, uføretrygdet, under rehabilitering, under attføring eller arbeidsmarkedskurs o.l., samt avtjener verneplikt, siviltjeneste. De med et arbeidsforhold, men som er midlertidig sykemeldt ansees for å være i arbeid.\n- Alderspensjonist = Ikke uførepensjon eller andre pensjonsformer annet enn aldersrelatert. AFP er inkludert.\n- Under utdanning/studerer = Innrullert i et studieløp og identifiserer seg som hovedsakelig student/elev. Både fulltid og deltid.\n- Ukjent = Ukjent arbeidsstatus.\n\nI tillegg er det mulig å registrere yrket til individet samt varighet på en sykemelding.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.occupation_summary.v1",
+  "differential" : false,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.t_occupation_summary.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "occurrences" : "1..1",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "existence" : "1..1",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "occurrences" : "1..1",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "existence" : "0..1",
+          "cardinality" : {
+            "@type" : "CARDINALITY",
+            "interval" : "0..*",
+            "ordered" : false,
+            "unique" : false
+          },
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0002.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "existence" : "0..1",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0004.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "existence" : "0..1",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "no.arbeidsstatus"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "no.arbeidsstatus" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "1",
+                      "value" : "I arbeid"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "2",
+                      "value" : "Ikke i arbeid"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "3",
+                      "value" : "Alderspensjonist"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "4",
+                      "value" : "Under utdanning/studerer"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "9",
+                      "value" : "Ukjent"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "ARCHETYPE_SLOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..*",
+            "nodeId" : "at0003",
+            "includes" : [ {
+              "@type" : "ASSERTION",
+              "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.occupation_record(-[a-zA-Z0-9_]+)*\\.v1/}",
+              "expression" : {
+                "@type" : "BINARY_OPERATOR",
+                "type" : "BOOLEAN",
+                "operator" : "matches",
+                "leftOperand" : {
+                  "@type" : "MODEL_REFERENCE",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Attribute",
+                  "path" : "archetype_id/value"
+                },
+                "rightOperand" : {
+                  "@type" : "CONSTRAINT",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Constraint",
+                  "item" : {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "/openEHR-EHR-CLUSTER\\.occupation_record(-[a-zA-Z0-9_]+)*\\.v1/" ]
+                  }
+                },
+                "precedenceOverriden" : false
+              },
+              "variables" : [ ]
+            } ],
+            "excludes" : [ ],
+            "closed" : false
+          }, {
+            "@type" : "ARCHETYPE_SLOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..*",
+            "nodeId" : "at0005",
+            "includes" : [ {
+              "@type" : "ASSERTION",
+              "stringExpression" : "archetype_id/value matches {/.*/}",
+              "expression" : {
+                "@type" : "BINARY_OPERATOR",
+                "type" : "BOOLEAN",
+                "operator" : "matches",
+                "leftOperand" : {
+                  "@type" : "MODEL_REFERENCE",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Attribute",
+                  "path" : "archetype_id/value"
+                },
+                "rightOperand" : {
+                  "@type" : "CONSTRAINT",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Constraint",
+                  "item" : {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "/.*/" ]
+                  }
+                },
+                "precedenceOverriden" : false
+              },
+              "variables" : [ ]
+            } ],
+            "excludes" : [ ],
+            "closed" : false
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0005.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-occupation_record-000.v1",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0005.3",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-sick_note_ous-001.v1",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0006",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "existence" : "0..1",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "occurrences" : "1..1",
+        "nodeId" : "at0007",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "existence" : "0..1",
+          "cardinality" : {
+            "@type" : "CARDINALITY",
+            "interval" : "0..*",
+            "ordered" : false,
+            "unique" : false
+          },
+          "children" : [ {
+            "@type" : "ARCHETYPE_SLOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..*",
+            "nodeId" : "at0008",
+            "includes" : [ {
+              "@type" : "ASSERTION",
+              "stringExpression" : "archetype_id/value matches {/.*/}",
+              "expression" : {
+                "@type" : "BINARY_OPERATOR",
+                "type" : "BOOLEAN",
+                "operator" : "matches",
+                "leftOperand" : {
+                  "@type" : "MODEL_REFERENCE",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Attribute",
+                  "path" : "archetype_id/value"
+                },
+                "rightOperand" : {
+                  "@type" : "CONSTRAINT",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Constraint",
+                  "item" : {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "/.*/" ]
+                  }
+                },
+                "precedenceOverriden" : false
+              },
+              "variables" : [ ]
+            } ],
+            "excludes" : [ ],
+            "closed" : false
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0009",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "existence" : "0..1",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE_TIME",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Occupation summary",
+          "description" : "Summary or persistent information about an individual's current and past jobs and/or roles."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Description",
+          "description" : "Narrative description about the entire occupation history of the individual."
+        },
+        "at0003" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0003",
+          "text" : "Occupation episode",
+          "description" : "Structured details about each job or role, both current and past.",
+          "comment" : "An individual may have multiple, concurrent active episodes of an occupation if they have a variety of jobs or roles. For example: carer for 2 days per week and employed in a retail job for 3 days a week; employed part-time to support studies."
+        },
+        "at0004" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Employment status",
+          "description" : "Statement about the individual's current employment.",
+          "comment" : "For example: employed; unemployed; or not in labour force. Coding with a terminology is desirable, where possible. Detail about each occupation can be recorded within the CLUSTER.occupation_record archetype."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Additional details",
+          "description" : "Additional details about the current jobs or roles, or previous occupation history of an individual."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Comment",
+          "description" : "Additional narrative about an individual's current occupation or history of occupations not captured in other fields."
+        },
+        "at0007" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0008" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008",
+          "text" : "Extension",
+          "description" : "Additional information required to capture local content or to align with other reference models/formalisms.",
+          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents."
+        },
+        "at0009" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009",
+          "text" : "Last updated",
+          "description" : "Date when the occupation summary or associated occupation records were was updated.",
+          "comment" : "At implementation, it is assumed that if an associated occupation record is added or updated then this date will also be updated."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Description",
+          "description" : "Narrative description about the entire occupation history of the individual."
+        },
+        "at0004.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Employment status",
+          "description" : "Statement about the individual's current employment.",
+          "comment" : "For example: employed; unemployed; or not in labour force. Coding with a terminology is desirable, where possible. Detail about each occupation can be recorded within the CLUSTER.occupation_record archetype."
+        },
+        "at0005.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Additional details",
+          "description" : "Additional details about the current jobs or roles, or previous occupation history of an individual."
+        },
+        "at0005.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Additional details",
+          "description" : "Additional details about the current jobs or roles, or previous occupation history of an individual."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Occupation summary",
+          "description" : "Summary or persistent information about an individual's current and past jobs and/or roles."
+        }
+      },
+      "nb" : {
+        "at0004.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Arbeidsstatus",
+          "description" : "Utsagn om individets nåværende jobb/rolle.",
+          "comment" : "Verdisettet med tilhørende forklaring i dette templatet for arbeidsstatus er:\n- I arbeid = Alle som har jobb og identifiserer seg med at deres hovedkategori er å være i arbeid. Både fulltid og deltid.\n- Ikke i arbeid = Alle som ikke har et arbeidsforhold: hjemmeværende, permitterte, arbeidssøkende, uføretrygdet, under rehabilitering, under attføring eller arbeidsmarkedskurs o.l., samt avtjener verneplikt, siviltjeneste. De med et arbeidsforhold, men som er midlertidig sykemeldt ansees for å være i arbeid.\n- Alderspensjonist = Ikke uførepensjon eller andre pensjonsformer annet enn aldersrelatert. AFP er inkludert.\n- Under utdanning/studerer = Innrullert i et studieløp og identifiserer seg som hovedsakelig student/elev. Både fulltid og deltid.\n- Ukjent = Ukjent arbeidsstatus."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Arbeidssammendrag",
+          "description" : "Sammendrag eller varig (persistent) informasjon om et individs nåværende eller tidligere arbeid og/eller roller."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Beskrivelse",
+          "description" : "Fritekstbeskrivelse av hele historikken av arbeid og/eller roller til individet.\r\n \r\n"
+        },
+        "at0003" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0003",
+          "text" : "Arbeidsepisode",
+          "description" : "Strukturerte detaljer om hver enkelt jobb eller rolle, både tidligere og nåværende.",
+          "comment" : "Et individ kan ha flere aktive arbeidsepisoder samtidig. For eksempel \"Hjemmeværende 2 dager i uken og butikkansatt 3 dager i uken\", eller \"Deltidsansatt i en bedrift mens man studerer\"."
+        },
+        "at0004" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Arbeidsstatus",
+          "description" : "Utsagn om individets nåværende jobb/rolle.",
+          "comment" : "For eksempel: \"Inntektsgivende arbeid\", \"Arbeidsledig\", \"Pensjonist\". Koding med en terminologi er ønskelig, der det er mulig, for eksempel OID 8150 (Volven.no). Detaljene om hver enkel jobb/ rolle kan registreres i arketypen CLUSTER.occupation_record (Arbeidsforhold/rolle)."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Ytterligere detaljer",
+          "description" : "Ytterligere strukturerte detaljer om individets nåværende eller tidligere arbeid og/eller roller."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Kommentar",
+          "description" : "Ytterligere fritekstkommentar til individets nåværende eller tidligere jobber/roller, som ikke er fanget i andre felt."
+        },
+        "at0007" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007",
+          "text" : "*Tree(en)",
+          "description" : "*@ internal @(en)"
+        },
+        "at0008" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        },
+        "at0009" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009",
+          "text" : "Sist oppdatert",
+          "description" : "Datoen da arbeidssammendraget eller tilknyttede arbeidsepisoder sist ble oppdatert.",
+          "comment" : "Ved implementering av arketypen forutsettes det at dersom en arbeidsepisode legges til eller oppdateres, vil også denne datoen oppdateres."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Beskrivelse",
+          "description" : "Fritekstbeskrivelse av hele historikken av arbeid og/eller roller til individet.\r\n \r\n"
+        },
+        "at0005.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Ytterligere detaljer",
+          "description" : "Ytterligere strukturerte detaljer om individets nåværende eller tidligere arbeid og/eller roller."
+        },
+        "at0005.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Ytterligere detaljer",
+          "description" : "Ytterligere strukturerte detaljer om individets nåværende eller tidligere arbeid og/eller roller."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Arbeidssammendrag",
+          "description" : "Sammendrag eller varig (persistent) informasjon om et individs nåværende eller tidligere arbeid og/eller roller."
+        }
+      },
+      "it" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Occupazione - sommario",
+          "description" : "Informazioni riepilogative o persistenti sull'attuale stato occupazionale (professione o ruolo) di un individuo."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Descrizione",
+          "description" : "Descrizione della storia occupazionale dell'individuo."
+        },
+        "at0003" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0003",
+          "text" : "Episodio lavorativo",
+          "description" : "Dettagli strutturati circa ogni professione svolta o ruolo ricoperto dall'individuo, attuali e passati.",
+          "comment" : "Un individuo può avere più episodi lavorativi attivi e simultanei se svolge più di una professione o ricopre più di un ruolo. Ad esempio: badante per 2 giorni alla settimana e impiegato in un lavoro di vendita al dettaglio per 3 giorni alla settimana; impiegato a tempo parziale per sostenere gli studi"
+        },
+        "at0004" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Stato occupazionale",
+          "description" : "Stato del'occupazione attuale dell'individuo.",
+          "comment" : "Ad esempio: occupato; disoccupato; o non in forza lavoro.  La codifica con una terminologia è preferibile, quando possibile. I dettagli circa ogni occupazione possono essere inseriti all'interno dell'archetipo CLUSTER.occupation_record."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Ulteriori dettagli",
+          "description" : "Ulteriori dettagli sull'attuale professione o ruolo ricoperto, o sulla storia lavorativa dell'individuo."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Commento",
+          "description" : "Note aggiuntive sull'occupazione attuale o sulla storia lavorativa non rilevate dagli altri campi. "
+        },
+        "at0007" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0008" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008",
+          "text" : "Estensione",
+          "description" : "Informazioni aggiuntive necessarie per registrare specifici contenuti locali o per allinearsi con altri modelli/formalismi di riferimento.",
+          "comment" : "Ad esempio: requisiti informativi locali o metadati addizionali per l'allineamento ai corrispondenti modelli FHIR o CIMI."
+        },
+        "at0009" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009",
+          "text" : "Data ultimo aggiornamento",
+          "description" : "Data in cui il riepilogo occupazionale e i singoli record degli episodi lavorativi associati sono stati aggiornati.",
+          "comment" : "Si assume che, al momento dell'implementazione, questa data venga aggiornata ogni volta che un record di un'episodio lavorativo viene aggiunto o aggiornato."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Descrizione",
+          "description" : "Descrizione della storia occupazionale dell'individuo."
+        },
+        "at0004.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Stato occupazionale",
+          "description" : "Stato del'occupazione attuale dell'individuo.",
+          "comment" : "Ad esempio: occupato; disoccupato; o non in forza lavoro.  La codifica con una terminologia è preferibile, quando possibile. I dettagli circa ogni occupazione possono essere inseriti all'interno dell'archetipo CLUSTER.occupation_record."
+        },
+        "at0005.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Ulteriori dettagli",
+          "description" : "Ulteriori dettagli sull'attuale professione o ruolo ricoperto, o sulla storia lavorativa dell'individuo."
+        },
+        "at0005.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Ulteriori dettagli",
+          "description" : "Ulteriori dettagli sull'attuale professione o ruolo ricoperto, o sulla storia lavorativa dell'individuo."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Occupazione - sommario",
+          "description" : "Informazioni riepilogative o persistenti sull'attuale stato occupazionale (professione o ruolo) di un individuo."
+        }
+      },
+      "de" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Zusammenfassung der Beschäftigung",
+          "description" : "Zusammenfassung oder beständige Information zu aktuellen und früheren Jobs und / oder Rollen einer Person."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Beschreibung",
+          "description" : "Beschreibung des gesamten Beschäftigungsverlaufs der Person."
+        },
+        "at0003" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0003",
+          "text" : "Beschäftigungsepisode",
+          "description" : "Strukturierte Angaben zu jedem Job oder jeder Rolle, sowohl aktuell als auch in der Vergangenheit.",
+          "comment" : "Eine Person kann mehrere aktive Episoden eines Berufs gleichzeitig haben, wenn sie eine Vielzahl von Jobs oder Rollen hat. Zum Beispiel: Betreuer an 2 Tagen pro Woche und 3 Tage in der Woche in einem Einzelhandelsjob beschäftigt; Teilzeitbeschäftigung zur Unterstützung des Studiums."
+        },
+        "at0004" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Beschäftigungsstatus",
+          "description" : "Aussage über die aktuelle Beschäftigung der Person.",
+          "comment" : "Zum Beispiel: beschäftigt, arbeitslos oder nicht erwerbstätig. Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert. Angaben zu jeder Beschäftigung können im Archetyp CLUSTER.occupation_record dargestellt werden."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Zusätzliche Angaben",
+          "description" : "Weitere Angaben zu den aktuellen Jobs oder Rollen oder zum vorherigen Beschäftigungsverlauf einer Person.\r\n"
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Kommentar",
+          "description" : "Zusätzliche Beschreibung der aktuellen Beschäftigung einer Person oder des Beschäftigungsverlaufs, die nicht in anderen Feldern erfasst wurde."
+        },
+        "at0007" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0008" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008",
+          "text" : "Erweiterung",
+          "description" : "Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.",
+          "comment" : "Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle."
+        },
+        "at0009" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009",
+          "text" : "Zuletzt aktualisiert",
+          "description" : "Das Datum, an dem die Zusammenfassung der Beschäftigung oder der zugehörige Beschäftigungsdatensatz aktualisiert wurde.",
+          "comment" : "Bei der Implementierung wird davon ausgegangen, dass dieses Datum ebenfalls aktualisiert wird, wenn ein zugehöriger Beschäftigungsdatensatz hinzugefügt oder aktualisiert wird."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Beschreibung",
+          "description" : "Beschreibung des gesamten Beschäftigungsverlaufs der Person."
+        },
+        "at0004.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Beschäftigungsstatus",
+          "description" : "Aussage über die aktuelle Beschäftigung der Person.",
+          "comment" : "Zum Beispiel: beschäftigt, arbeitslos oder nicht erwerbstätig. Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert. Angaben zu jeder Beschäftigung können im Archetyp CLUSTER.occupation_record dargestellt werden."
+        },
+        "at0005.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Zusätzliche Angaben",
+          "description" : "Weitere Angaben zu den aktuellen Jobs oder Rollen oder zum vorherigen Beschäftigungsverlauf einer Person.\r\n"
+        },
+        "at0005.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Zusätzliche Angaben",
+          "description" : "Weitere Angaben zu den aktuellen Jobs oder Rollen oder zum vorherigen Beschäftigungsverlauf einer Person.\r\n"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Zusammenfassung der Beschäftigung",
+          "description" : "Zusammenfassung oder beständige Information zu aktuellen und früheren Jobs und / oder Rollen einer Person."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "fa21cd28-93c0-3457-93f8-5136339cfc7f",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "arbeidsstatus_yrke",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "251b76fc-936e-45df-8869-3babe10969cb",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "6EFFAB5F512D4C7C4C9CCFCDC48670C9"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Darstellung von detaiilierten Informationen zu einem Job oder einer Rolle, die von einer Person während eines bestimmten Zeitraums ausgeführt wurde.",
+          "keywords" : [ "Beschäftigung", "Arbeitgeber", "Job", "Tätigkeit", "Arbeit", "Beruf", "arbeitslos", "Mitarbeiter", "Arbeitslosigkeit", "studieren", "beschäftigt", "Schüler", "Branche", "Berufstätigkeit", "Freiwilliger", "Berufung", "Handel", "Arbeiter", "Ehrenamtliche", "Position", "Arbeitsplatz" ],
+          "use" : "Verwenden Sie diesen Archetyp, um detaillierte Angaben zu einem Job oder einer Rolle darzustellen, die von einer Person während eines bestimmten Zeitraums ausgeführt wurde.\r\n\r\nDer Umfang dieses Archetyps umfasst alle Beschäftigungen oder Tätigkeiten einer Person. Zum Beispiel: ein bezahlter Job oder Dienst; unbezahlte Arbeit jeglicher Art wie eine Freiwilligentätigket; oder Rollen wie Ruhestand oder Student.\r\n\r\nMehrere Instanzen dieses Archetyps, die im Laufe der Zeit erfasst werden, führen zur Übersicht eines Verlaufs vergangener und aktueller Jobs und / oder Rollen.\r\n\r\nEine aktive, aktuelle Beschäftigung kann aus \"Beginn\" abgeleitet werden, wenn unter \"Ende\" nichts vermerkt ist.\r\n\r\nEine Person kann viele gleichzeitige Beschäftigungen ausüben, von denen jede bezahlt oder unbezahlt sein kann. Jede Beschäftigung sollte in einer separaten Instanz dieses Archetyps dargestellt werden.\r\n\r\nWenn sich die Details der Beschäftigung wesentlich ändern, z. B. eine Änderung der Rolle / des Titels oder der Anzahl der Stunden, sollte dies als separate Instanz dieses Archetyps dargestellt werden.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Beschäftigungsepisode\" im Archetyp \"EVALUATION.occupation_summary\" entwickelt, kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nEs können offensichtliche oder tatsächliche Überlappungen zwischen den Datenelementen dieses Archetyps und demografische Details zu Berufs- / Beschäftigungsdetails an anderen Stellen der klinischen oder administrativen Systeme geben. Die Datenelemente dieses Archetyps wurden speziell zur Unterstützung klinischer Zwecke entwickelt, einschließlich der Erstellung eines ärztlichen Attests für einen aktuellen Arbeitgeber.",
+          "misuse" : "Darf nicht verwendet werden, um vorübergehende Änderungen oder Episoden innerhalb eines einzelnen Beschäftigungsdatensatzes darzustellen, z. B. Urlaub. Dies ist mit diesen Archetyp nicht möglich und sollte Teil des Human Relations-Systems eines Arbeitgebers sein.\r\n\r\nNicht zur detaillierten Beschreibung von Gesundheitsrisiken oder der Exposition gegenüber gefährlichen Substanzen am Arbeitsplatz verwenden. Verwenden Sie zu diesem Zweck die Archetypen EVALUATION.health_risk oder EVALUATION.exposure.\r\n\r\nDarf nicht verwendet werden, um Informationen über Einkommensquellen oder Einkommensangaben für die Person darzustellen. Verwenden Sie zu diesem Zweck den Archetyp EVALUATION.income_summary.\r\n\r\nNicht zur Darstellung von Informationen über die Beschäftigung einer Person zu einem bestimmten Zeitpunkt (z. B. am 16. Juni 2014) oder während eines relativen Zeitintervalls (z. B. „in den letzten 30 Tagen“) verwenden. Verwenden Sie einen geeigneten OBSERVATION-Archetyp für diesen Zweck.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera detaljer om ett enskilt jobb eller en roll som en person utför under en viss tidsperiod.",
+          "keywords" : [ "sysselsättning", "arbetsgivare", "jobb", "ockupation", "arbete", "yrke", "arbetslös", "anställd", "arbetslöshet", "studerar", "anställda", "studerande", "sektor", "yrke", "volontär", "yrke", "handel", "arbetstagare", "volontär", "position" ],
+          "use" : "Används för att registrera information om ett enskilt jobb eller en roll som en person utför under en viss tidsperiod.\r\n\r\nOmfattningen av denna arketyp inkluderar alla yrken eller aktiviteter som utförs av en individ. Till exempel: ett betalt jobb eller anställning; obetalt arbete av vilken typ som helst som en volontärposition; eller roller som att gå i pension eller studera.\r\n\r\nFlera instanser av den här arketypen som skapats över tid kommer att resultera i en sammanställning av en historia av tidigare och nuvarande jobb och/eller roller.\r\n\r\nEn aktiv eller nuvarande ockupation kan antydas från ett 'Datum inleddes' men inget 'Datum upphört'.\r\n\r\nEn individ kan utföra många samtidiga yrken, var och en kan vara betald eller obetald. Varje yrke bör registreras i en separat instans av denna arketyp.\r\n\r\nOm yrkesattribut förändras väsentligt, till exempel roll / titel eller antal timmar, bör detta registreras som en separat instans av denna arketyp.\r\n\r\nDen här arketypen har utformats speciellt för att användas i 'Yrkesepisod' SLOT inom EVALUATION.occupation_summary arketyp, men kan också användas inom alla andra ENTRY- eller CLUSTER-arketyper, där det är kliniskt lämpligt.\r\n\r\nDet kan finnas någon uppenbar eller verklig överlappning mellan dataelementen i denna arketyp och yrkes- / anställningsdetaljer som kan lagras som demografiska detaljer i kliniska eller administrativa system. Dessa dataelement har utformats specifikt för att stödja kliniska ändamål, inklusive generering av ett läkarintyg till en nuvarande arbetsgivare.",
+          "misuse" : "Inte utformad för att registrera tillfälliga ändringar eller avsnitt inom en enda yrkesregistrering, som att vara ledig. Detta är utom räckhåll för denna arketyp och bör ingå i en arbetsgivares HR-system.\r\n\r\nInte utformad för att användas till detaljerade beskrivningar av hälsorisker eller exponering för farliga ämnen på arbetsplatsen. Använd arketyperna EVALUATION.health_risk eller EVALUATION.exposure för detta ändamål.\r\n\r\nInte utformad för att registrera information om inkomstkällor eller inkomstuppgifter för individen. Använd arketypen EVALUATION.income_summary för detta ändamål.\r\n\r\nAnvänds inte för att registrera information om en persons ockupation vid en viss tidpunkt (till exempel den 16 juni 2014) eller under ett relativt tidsintervall (till exempel \"under de senaste 30 dagarna\". Använd en lämplig OBSERVATION arketyp för detta ändamål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljert informasjon om en jobb eller rolle individet har, eller har hatt i en spesifisert tidsperiode.",
+          "keywords" : [ "arbeid", "arbeidstaker", "arbeidsgiver", "arbeidsforhold", "arbeidshistorikk", "jobb", "ansatt", "yrke", "arbeidsløs", "studerer", "student", "elev", "trygdet", "ufør", "arbeidssituasjon", "erverv", "yrkestilknytning", "pensjon", "pensjonist", "attføring", "bransje", "arbeidsledig", "hjemmeværende", "stilling", "profesjon", "frivillig", "vernepliktig", "sektor", "næring", "verv" ],
+          "use" : "Brukes for å registrere detaljert informasjon om en jobb eller rolle individet har, eller har hatt i en spesifisert tidsperiode.\r\n\r\nArketypen omfatter alle typer arbeid eller aktiviteter individet har eller har hatt. For eksempel: En/et betalt eller ubetalt jobb/arbeid/verv, samt ulike roller som for eksempel pensjonist, hjemmeværende eller student.\r\n\r\nVed å benytte denne arketypen til gjentatte registreringer, vil en få fram en historisk oversikt over nåværende og tidligere arbeidsforhold /roller et individ har eller har hatt.\r\n\r\nEt aktivt, nåværende arbeidsforhold/roller kan bli utledet fra \"Dato for oppstart\" hvis det ikke er registrert noe i \"Dato for opphør\".\r\n\r\nEt individ kan ha mange samtidige arbeidsforhold/rolle, og de kan hver for seg være betalt eller ubetalt. Hvert slik arbeidsforhold registreres i egne instanser av denne arketypen.\r\n\r\nHvis detaljer om et arbeidsforhold/rolle endrer seg vesentlig, som forandring av tittel eller stillingsprosent, registreres dette i egne instanser av denne arketypen.\r\n\r\nArketypen er laget for å benyttes i SLOTet \"Arbeidsepisode\" i arketypen EVALUATION.occupation_summary (Arbeidssammendrag), men kan også brukes innen andre ENTRY- eller CLUSTER-arketyper der det er klinisk relevant.\r\n\r\nDet kan fremstå som å være overlapp, reell eller tilsynelatende, mellom dataelementene i denne arketypen og demografiske opplysninger om sysselsetting/arbeidsforhold andre steder i kliniske systemer. Dataelementene i denne arketypen er laget spesifikt for å støtte kliniske bruksområder, inkludert sykemeldinger eller legeerklæringer.",
+          "misuse" : "Brukes ikke for å registrere midlertidige endringer eller episoder innen en enkelt arbeidsepisode, som å være i permisjon. Dette er ikke innenfor anvendelsesområdet for denne arketypen, og skal registreres i et personal- eller HR-system.\r\n\r\nBrukes ikke for å beskrive helserisikoer eller eksponering for farlige substanser i arbeidssituasjonen. Til dette brukes henholdsvis arketypene EVALUATION.health_risk (Helserisiko) eller EVALUATION.exposure.\r\n\r\nBrukes ikke for å registrere informasjon om individets inntektskilder eller detaljer om inntekt. Bruk arketypen EVALUATION.income_summary for dette formålet.\r\n\r\nBrukes ikke for å registrere informasjon om arbeid /rolle for et individ på en bestemt dato (for eksempel 16. juni 2014) eller i løpet av en relativ tidsperiode, som for eksempel \"siste 30 dager\". Dette kan utledes fra \"Dato for oppstart\" hvis det ikke er registrert noe i \"Dato for opphør\", og må registreres i en egen OBSERVATION-arketype for dette formålet.",
+          "copyright" : "© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt"
+          },
+          "purpose" : "Registrar detalhes sobre um único trabalho ou função executada por um indivíduo durante um período especificado.\r\n",
+          "keywords" : [ "emprego", "Empregador", "trabalho", "ocupação", "trabalhos", "profissão", "desempregado", "empregado", "desemprego", "estudante", "aluno", "setor", "profissão", "voluntário", "vocação", "comércio", "trabalhador", "posição" ],
+          "use" : "Use para registrar detalhes sobre um único trabalho ou função realizada por uma pessoa durante um período especificado.\r\n\r\nO escopo deste arquétipo inclui todas as ocupações ou atividades realizadas por um indivíduo. Por exemplo: um trabalho remunerado ou emprego; trabalho não remunerado de qualquer tipo, como uma posição de voluntário; ou papéis como aposentado ou aluno.\r\n\r\nVárias instâncias desse arquétipo capturadas ao longo do tempo resultarão na agregação de um histórico de trabalhos e / ou funções anteriores e atuais.\r\n\r\nUma ocupação ativa ou atual pode estar implícita a partir de uma 'Data de início', mas não pela 'Data de encerramento'.\r\n\r\nUm indivíduo pode realizar ocupações simultâneas, cada uma das quais podendo ser remuneradas ou não. Cada ocupação deve ser registrada em uma instância separada desse arquétipo.\r\n\r\nSe os atributos de ocupação mudarem significativamente, como uma mudança de função / título ou número de horas, isso deverá ser registrado como uma instância separada desse arquétipo.\r\n\r\nEsse arquétipo foi projetado especificamente para ser usado no SLOT 'Episódio de ocupação' dentro do arquétipo EVALUATION.occupation_summary, mas também pode ser usado em qualquer outro arquétipo ENTRY ou CLUSTER, onde for clinicamente apropriado.\r\n\r\nPode haver alguma sobreposição aparente ou real entre os elementos de dados neste arquétipo e os detalhes de ocupação / emprego que podem ser armazenados como detalhes demográficos em sistemas clínicos ou administrativos. Esses elementos de dados foram projetados especificamente para apoiar fins clínicos, incluindo a geração de um atestado médico para um empregador atual.",
+          "misuse" : "\t\r\nNão deve ser usado para gravar alterações ou episódios temporários em um registro único de ocupação, como estar de licença. Isso está fora do escopo desse arquétipo e deve fazer parte do sistema de recursos humanos de um empregador.\r\n\r\nNão deve ser usado para descrições detalhadas de riscos para a saúde ou exposição a substâncias perigosas no local de trabalho. Use os arquétipos EVALUATION.health_risk ou EVALUATION.exposure para essa finalidade.\r\n\r\nNão deve ser usado para registrar informações sobre fontes de renda ou detalhes de renda da pessoa. Use o arquétipo EVALUATION.income_summary para esse fim.\r\n\r\nNão deve ser usado para registrar informações sobre a ocupação de um indivíduo em um momento específico (por exemplo, em 16 de junho de 2014) ou durante um intervalo de tempo relativo (por exemplo, 'nos últimos 30 dias'). Use um arquétipo do tipo OBSERVATION para esse fim.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar detalhes sobre um único trabalho ou função executada por um indivíduo durante um período especificado.",
+          "keywords" : [ "emprego", "Empregador", "trabalho", "ocupação", "trabalhos", "profissão", "desempregado", "empregado", "desemprego", "estudante", "aluno", "setor", "profissão", "voluntário", "vocação", "comércio", "trabalhador", "posição" ],
+          "use" : "Use para registrar detalhes sobre um único trabalho ou função realizada por uma pessoa durante um período especificado.\r\n\r\nO escopo deste arquétipo inclui todas as ocupações ou atividades realizadas por um indivíduo. Por exemplo: um trabalho remunerado ou emprego; trabalho não remunerado de qualquer tipo, como uma posição de voluntário; ou papéis como aposentado ou aluno.\r\n\r\nVárias instâncias desse arquétipo capturadas ao longo do tempo resultarão na agregação de um histórico de trabalhos e / ou funções anteriores e atuais.\r\n\r\nUma ocupação ativa ou atual pode estar implícita a partir de uma 'Data de início', mas não pela 'Data de encerramento'.\r\n\r\nUm indivíduo pode realizar ocupações simultâneas, cada uma das quais podendo ser remuneradas ou não. Cada ocupação deve ser registrada em uma instância separada desse arquétipo.\r\n\r\nSe os atributos de ocupação mudarem significativamente, como uma mudança de função / título ou número de horas, isso deverá ser registrado como uma instância separada desse arquétipo.\r\n\r\nEsse arquétipo foi projetado especificamente para ser usado no SLOT 'Episódio de ocupação' dentro do arquétipo EVALUATION.occupation_summary, mas também pode ser usado em qualquer outro arquétipo ENTRY ou CLUSTER, onde for clinicamente apropriado.\r\n\r\nPode haver alguma sobreposição aparente ou real entre os elementos de dados neste arquétipo e os detalhes de ocupação / emprego que podem ser armazenados como detalhes demográficos em sistemas clínicos ou administrativos. Esses elementos de dados foram projetados especificamente para apoiar fins clínicos, incluindo a geração de um atestado médico para um empregador atual.",
+          "misuse" : "Não deve ser usado para gravar alterações ou episódios temporários em um registro único de ocupação, como estar de licença. Isso está fora do escopo desse arquétipo e deve fazer parte do sistema de recursos humanos de um empregador.\r\n\r\nNão deve ser usado para descrições detalhadas de riscos para a saúde ou exposição a substâncias perigosas no local de trabalho. Use os arquétipos EVALUATION.health_risk ou EVALUATION.exposure para essa finalidade.\r\n\r\nNão deve ser usado para registrar informações sobre fontes de renda ou detalhes de renda da pessoa. Use o arquétipo EVALUATION.income_summary para esse fim.\r\n\r\nNão deve ser usado para registrar informações sobre a ocupação de um indivíduo em um momento específico (por exemplo, em 16 de junho de 2014) ou durante um intervalo de tempo relativo (por exemplo, 'nos últimos 30 dias'). Use um arquétipo do tipo OBSERVATION para esse fim.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a single job or role carried out by an individual during a specified period of time.",
+          "keywords" : [ "employment", "employer", "job", "occupation", "work", "profession", "unemployed", "employee", "unemployment", "studying", "employed", "student", "sector", "profession", "volunteer", "vocation", "trade", "worker", "volunteer", "position" ],
+          "use" : "Use to record details about a single job or role carried out by an individual during a specified period of time. \r\n\r\nThe scope of this archetype is inclusive of all occupations or activities undertaken by an individual. For example: a paid job or employment; unpaid work of any type such as a volunteer position; or roles such as being retired or a student. \r\n\r\nMultiple instances of this archetype captured over time will result in the aggregation of a history of past and present jobs and/or roles.\r\n\r\nAn active, or current occupation may be implied from a 'Date commenced' but no 'Date ceased'. \r\n\r\nAn individual may carry out many simultaneous occupations, each of which may be paid or unpaid. Each occupation should be recorded in a separate instance of this archetype.\r\n\r\nIf occupation attributes change significantly, such as a change of role/title or number of hours, then this should be recorded as a separate instance of this archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Occupation episode' SLOT within the EVALUATION.occupation_summary archetype, but can also be used within any other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThere may be some apparent or real overlap between the data elements in this archetype and occupation/employment details that may be stored as demographic details in clinical or administrative systems. These data elements have been designed specifically to support clinical purposes including generation of a medical certificate to a current employer.",
+          "misuse" : "Not to be used to record temporary changes or episodes within a single occupation record, such as being on leave. This is out of scope for this archetype and should be part of an employer's human relations system.\r\n\r\nNot to be used for detailed descriptions of health risks or exposure to hazardous substances in the workplace. Use the archetypes EVALUATION.health_risk or EVALUATION.exposure for this purpose.\r\n\r\nNot to be used to record information about sources of income or income details for the individual. Use the EVALUATION.income_summary archetype for this purpose.\r\n\r\nNot to be used to record information about the occupation of an individual at a specific point in time (for example, on June 16, 2014) or during a relative interval of time (for example 'in the past 30 days'. Use an appropriate OBSERVATION archetype for this purpose.",
+          "copyright" : "© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare i dettagli della singola professione svolta o ruolo ricoperto da un individuo durante un determinato periodo di tempo.",
+          "keywords" : [ "lavoro, impiego, datore di lavoro, occupazione, disoccupazione, professione, disoccupato, occupato, dipendente, impiegato, studente, settore, volontario, vocazione, mestiere, lavoratore, posizione" ],
+          "use" : "Usato per registrare i dettagli della singola professione svolta o ruolo ricoperto da un individuo durante un determinato periodo di tempo.\r\n\r\nL'ambito di questo archetipo comprende tutte le occupazioni o attività svolte da un individuo. Ad esempio: un lavoro o impiego retribuiti; un qualsiasi lavoro non retribuito, come un'attività di volontariato; o ruoli come essere in pensione o uno studente. \r\n\r\nPiù istanze di questo archetipo catturate nel tempo possono essere aggregate per costruire la storia occupazionale di un individuo, che comprende occupazioni e ruoli passati e presenti.\r\n\r\nÈ possibile dedurre se l'occupazione sia attiva/corrente se è presente una 'Data di inizio' ma non una 'Data di cessazione'.\r\n\r\nUn individuo può avere più occupazioni contemporaneamente, ciascuna delle quali può essere retribuita o meno. Ogni occupazione dovrebbe essere registrata in una istanza separata di questo archetipo. \r\n\r\nSe i dettagli dell'occupazione cambiano significativamente, ad esempio in caso di modifica del ruolo/titolo o numero di ore, questo dovrebbe corrispondere ad un'istanza separata di questo archetipo.\r\n\r\nQuesto archetipo è stato sviluppato per essere usato nello SLOT 'Episodio lavorativo' all'interno dell'archetipo EVALUATION.occupation_summary, ma è possibile utilizzarlo all'interno di altri archetipi di tipo ENTRY o CLUSTER quando clinicamente appropriato. \r\n\r\nCi potrebbe essere una sovrapposizione, apparente o reale, tra i dati all'interno di questo archetipo e i dettegli sull'occupazione/impiego memorizzati come informazioni demografiche all'interno di sistemi clinici o amministrativi.  I contenuti sono stati espressamente progettati per supportare l'attività clinica, compresa la generazione di certificati medici per un datore di lavoro.",
+          "misuse" : "Non utilizzare per memorizzare cambiamenti o episodi temporanei all'interno di un singolo record di occupazione, come ad esempio essere in congedo. Questo non rientra nello scopo dell'archetipo e dovrebbe far parte del sistema di gestione delle risorse umane del datore di lavoro. \r\n\r\nNon utilizzare per descrizioni dettagliate dei rischi per la salute o dell'esposizione a sostanze pericolose nel luogo di lavoro. Utilizzare invece gli archetipi EVALUATION.health_risk o EVALUATION.exposure.\r\n\r\nNon utilizzare per memorizzare informazioni sulle fonti o dettagli del reddito dell'individuo. Per questo scopo, utilizzare l'archetipo EVALUATION.income_summary.\r\n\r\nNon utilizzare per memorizzare informazioni sull'occupazione di un individuo in uno specifico punto nel tempo (ad esempio, il 16 giugno 2014) o durante un intervallo di tempo (ad esempio 'negli ultimi 30 giorni'). Per questo scopo, usare un appropriato archetipo di tipo OBSERVATION. ",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Un travail ou un rôle unique exercé par un individu pendant une période de temps déterminée.",
+          "keywords" : [ "emploi", "employeur", "emploi", "Occupation", "travail", "profession", "sans emploi", "employé", "chômage", "en train d'étudier", "employé", "étudiant", "secteur", "profession", "bénévole", "vocation", "Commerce", "ouvrier", "bénévole", "position" ],
+          "use" : "*Use to record details about a single job or role carried out by an individual during a specified period of time. \r\n\r\nThe scope of this archetype is inclusive of all occupations or activities undertaken by an individual. For example: a paid job or employment; unpaid work of any type such as a volunteer position; or roles such as being retired or a student. \r\n\r\nMultiple instances of this archetype captured over time will result in the aggregation of a history of past and present jobs and/or roles.\r\n\r\nAn active, or current occupation may be implied from a 'Date commenced' but no 'Date ceased'. \r\n\r\nAn individual may carry out many simultaneous occupations, each of which may be paid or unpaid. Each occupation should be recorded in a separate instance of this archetype.\r\n\r\nIf occupation attributes change significantly, such as a change of role/title or number of hours, then this should be recorded as a separate instance of this archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Occupation episode' SLOT within the EVALUATION.occupation_summary archetype, but can also be used within any other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThere may be some apparent or real overlap between the data elements in this archetype and occupation/employment details that may be stored as demographic details in clinical or administrative systems. These data elements have been designed specifically to support clinical purposes including generation of a medical certificate to a current employer.(en)",
+          "misuse" : "*Not to be used to record temporary changes or episodes within a single occupation record, such as being on leave. This is out of scope for this archetype and should be part of an employer's human relations system.\r\n\r\nNot to be used for detailed descriptions of health risks or exposure to hazardous substances in the workplace. Use the archetypes EVALUATION.health_risk or EVALUATION.exposure for this purpose.\r\n\r\nNot to be used to record information about sources of income or income details for the individual. Use the EVALUATION.income_summary archetype for this purpose.\r\n\r\nNot to be used to record information about the occupation of an individual at a specific point in time (for example, on June 16, 2014) or during a relative interval of time (for example 'in the past 30 days'. Use an appropriate OBSERVATION archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar detalles sobre un trabajo o rol llevado a cabo por un individuo durante un periodo de tiempo especificado.",
+          "keywords" : [ "empleo", "empleador", "trabajo", "ocupación", "tarea", "profesión", "desempleado", "empleado", "desempleo", "estudiando", "empleado", "estudiante", "sector", "profesión", "voluntario", "vocación", "comercio", "trabajador", "voluntario", "cargo" ],
+          "use" : "Usar para registrar detalles sobre un trabajo o rol particular llevado a cabo por un individuo durante un periodo de tiempo especificado.\r\n\r\nEl alcance de este arquetipo incluye todos los empleos o actividades llevadas a cabo por el individuo. Por ejemplo: Un trabajo o empleo pagado; trabajo no remunerado de cualquier tipo como voluntario; o roles tales como estar jubilado o ser estudiante.\r\n\r\nMúltiples instancias de este arquetipo capturadas a lo largo del tiempo resultarán en una agregación de un histórico de trabajos y/o roles presentes o pasados.\r\n\r\nUn trabajo actual puede deducirse de la 'Fecha empezado' pero no de la 'Fecha finalizado'.\r\n\r\nUn individuo puede llevar a cabo muchas ocupaciones al mismo tiempo, las cuales pueden ser remuneradas o no remuneradas. Cada ocupación debería de ser registrada en una instancia separada de este arquetipo.\r\n\r\nSi los atributos de la ocupación cambian significativamente, tales como cambios en el título/rol o el número de horas, éstas se deberían de registrar en una instancia separada de este arquetipo.\r\n\r\nEste arquetipo ha sido específicamente diseñado para ser usado en el SLOT de 'Episodio de ocupación' dentro del arquetipo EVALUATION.occupation_summary, pero también puede ser usado dentro de cualquier otro arquetipo ENTRY o CLUSTER, cuando sea clínicamente apropiado.\r\n\r\nPuede haber una superposición aparente o real entre los elementos de datos en este arquetipo y detalles sobre la ocupación/empleo que puedan haber sido incluidos como detalles demográficos en sistemas clínicos o administrativos. Estos elementos de datos se han diseñado específicamente para dar soporte a propósitos clínicos como puede ser la generación de un certificado médico para el empleador actual.",
+          "misuse" : "No debe ser usado para registrar cambios temporales o episodios dentro de un único registro ocupacional, tales como estar de baja. Esto está fuera del alcance de este arquetipo y debería ser parte de un sistema de recursos humanos del empleador.\r\n\r\nNo debe ser usado para una descripción detallada de los riesgos de salud o exposición a sustancias nocivas en el lugar de trabajo. Para este propósito use los arquetipos EVALUATION.health_risk o EVALUATION.exposure.\r\n\r\nNo debe ser usado para registrar información sobre fuentes o detalles de ingresos de un individuo. Para este propósito use el arquetipo EVALUATION.income_summary.\r\n\r\nNo debe ser usado para registrar información sobre la ocupación de un individuo en un punto concreto de tiempo (por ejemplo, el 16 de Junio de 2014) o durante un periodo de tiempo relativo (por ejemplo 'durante los últimos 30 días'). Para este propósito use un arquetipo OBSERVATION adecuado.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.occupation_record.v1",
+    "differential" : false,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-occupation_record-000.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "occurrences" : "1..1",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "1..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "ARCHETYPE_SLOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..*",
+          "nodeId" : "at0004",
+          "includes" : [ {
+            "@type" : "ASSERTION",
+            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v1/}",
+            "expression" : {
+              "@type" : "BINARY_OPERATOR",
+              "type" : "BOOLEAN",
+              "operator" : "matches",
+              "leftOperand" : {
+                "@type" : "MODEL_REFERENCE",
+                "type" : "STRING",
+                "precedenceOverriden" : false,
+                "referenceType" : "Attribute",
+                "path" : "archetype_id/value"
+              },
+              "rightOperand" : {
+                "@type" : "CONSTRAINT",
+                "type" : "STRING",
+                "precedenceOverriden" : false,
+                "referenceType" : "Constraint",
+                "item" : {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v1/" ]
+                }
+              },
+              "precedenceOverriden" : false
+            },
+            "variables" : [ ]
+          } ],
+          "excludes" : [ ],
+          "closed" : false
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0016.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0013.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_PROPORTION",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "numerator",
+                "existence" : "1..1",
+                "children" : [ {
+                  "@type" : "C_REAL",
+                  "rmTypeName" : "Real",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0.0,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
+                  } ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "type",
+                "existence" : "1..1",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "Integer",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "upper" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
+                  }, {
+                    "lower" : 2,
+                    "upper" : 2,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0020", "at0021" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0019.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "wk/a" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "d/wk" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "wk/mo" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "d/mo" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "mo/a" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "d/a" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "h/mo" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "h/a" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "h/wk" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "h/d" ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "ARCHETYPE_SLOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..*",
+          "nodeId" : "at0018",
+          "includes" : [ {
+            "@type" : "ASSERTION",
+            "stringExpression" : "archetype_id/value matches {/.*/}",
+            "expression" : {
+              "@type" : "BINARY_OPERATOR",
+              "type" : "BOOLEAN",
+              "operator" : "matches",
+              "leftOperand" : {
+                "@type" : "MODEL_REFERENCE",
+                "type" : "STRING",
+                "precedenceOverriden" : false,
+                "referenceType" : "Attribute",
+                "path" : "archetype_id/value"
+              },
+              "rightOperand" : {
+                "@type" : "CONSTRAINT",
+                "type" : "STRING",
+                "precedenceOverriden" : false,
+                "referenceType" : "Constraint",
+                "item" : {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "/.*/" ]
+                }
+              },
+              "precedenceOverriden" : false
+            },
+            "variables" : [ ]
+          } ],
+          "excludes" : [ ],
+          "closed" : false
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0008.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0014.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "A single job or role carried out by an individual during a specified period of time."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Occupation record",
+            "description" : "A single job or role carried out by an individual during a specified period of time."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Paid employment status",
+            "description" : "The status of a worker in terms of being paid or unpaid.",
+            "comment" : "For example: unpaid; paid; self-employed; or volunteer. Coding with a terminology is desirable, where possible."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Industry category",
+            "description" : "The type of industry in which the individual works.",
+            "comment" : "For example: Mining, manufacturing, construction. Coding with a terminology is desirable, where possible."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Organisation details",
+            "description" : "Details about the employer or institution."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Job title/role",
+            "description" : "The main job title or the role of the individual.",
+            "comment" : "For example: Chief Executive Officer; Carer; or Student. Each of these job titles or roles may be comprised of multiple duties."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Job category",
+            "description" : "The type of job undertaken by the individual.",
+            "comment" : "Coding with a terminology is desirable, where possible, such as ISCO-08.\r\nFor example: Sales manager or software engineer."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Date commenced",
+            "description" : "The date when an individual commenced the job or role."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Date ceased",
+            "description" : "The date when an individual ceased working in a job or role."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Full time equivalent",
+            "description" : "The time spent in this job or role relative to full-time.",
+            "comment" : "Full time equivalent may also be known as 'FTE'. For example: 0.5; 50 %; or \"part time\"."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comment",
+            "description" : "Additional narrative about the occupation record not captured in other fields."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Description",
+            "description" : "Narrative description about the job or role carried out by the individual."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Additional details",
+            "description" : "Further detail about an occupation record.",
+            "comment" : "For example: workplace location and conditions; or combat zone experience."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Time allocated",
+            "description" : "The amount of time an individual is allocated to carry out the job or role per specified period of this occupation record.",
+            "comment" : "For example: '3 days per week', '10 days per month' or '2 hours per day'."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Full-time",
+            "description" : "The individual carries out this occupation for equal to or more than the amount of time that is officially regarded as 'full-time' for the occupation."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Part-time",
+            "description" : "The individual carries out this occupation for less than the amount of time that is officially regarded as 'full-time' for the occupation."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Full time equivalent",
+            "description" : "The time spent in this job or role relative to full-time.",
+            "comment" : "Full time equivalent may also be known as 'FTE'. For example: 0.5; 50 %; or \"part time\"."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Industry category",
+            "description" : "The type of industry in which the individual works.",
+            "comment" : "For example: Mining, manufacturing, construction. Coding with a terminology is desirable, where possible."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comment",
+            "description" : "Additional narrative about the occupation record not captured in other fields."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Job title/role",
+            "description" : "The main job title or the role of the individual.",
+            "comment" : "For example: Chief Executive Officer; Carer; or Student. Each of these job titles or roles may be comprised of multiple duties."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Description",
+            "description" : "Narrative description about the job or role carried out by the individual."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Job category",
+            "description" : "The type of job undertaken by the individual.",
+            "comment" : "Coding with a terminology is desirable, where possible, such as ISCO-08.\r\nFor example: Sales manager or software engineer."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Date commenced",
+            "description" : "The date when an individual commenced the job or role."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Date ceased",
+            "description" : "The date when an individual ceased working in a job or role."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Time allocated",
+            "description" : "The amount of time an individual is allocated to carry out the job or role per specified period of this occupation record.",
+            "comment" : "For example: '3 days per week', '10 days per month' or '2 hours per day'."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Paid employment status",
+            "description" : "The status of a worker in terms of being paid or unpaid.",
+            "comment" : "For example: unpaid; paid; self-employed; or volunteer. Coding with a terminology is desirable, where possible."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "En jobb eller rolle individet har, eller har hatt i en spesifisert tidsperiode."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Tittel/rolle",
+            "description" : "Stillingstittel eller betegnelse for dette arbeidsforholdet/rollen/vervet.",
+            "comment" : "For eksempel: Administrerende direktør, hjemmeværende eller student. Hver av disse stillingstitlene eller rollene kan omfatte flere arbeidsoppgaver."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Tittel/rolle",
+            "description" : "Stillingstittel eller betegnelse for dette arbeidsforholdet/rollen/vervet."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Arbeidsforhold/rolle",
+            "description" : "En jobb eller rolle individet har, eller har hatt i en spesifisert tidsperiode."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status lønnet arbeid",
+            "description" : "Om individet har lønnet eller ulønnet arbeid.",
+            "comment" : "For eksempel: \"Ulønnet\", \"Lønnet\", \"Selvstendig næringsdrivende\" eller \"Frivillig arbeid\". Koding av denne statusen med en terminologi er anbefalt, der det er mulig."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Bransje",
+            "description" : "Klassifisering av bransje eller sektor der individet har arbeidsforholdet/rollen.",
+            "comment" : "For eksempel: \"Jordbruk, skogbruk og fiske\", \"Varehandel\", \"Bygg- og anleggsvirksomhet\". Koding av \"Bransje\" med en terminologi er anbefalt, der det er mulig."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Organisasjonsdetaljer",
+            "description" : "Detaljer om arbeidsgiver eller institusjon/organisasjon."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Yrkeskategori",
+            "description" : "Klassifisering av yrket individet har.",
+            "comment" : "Koding med en terminologi er ønskelig om mulig. For eksempel kategorisering i henhold til STYRK-08.\r\nFor eksempel: \"Salgssjef\" eller \"Programvareutvikler\"."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Dato for oppstart",
+            "description" : "Datoen arbeidsforholdet/rollen startet."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Dato for opphør",
+            "description" : "Datoen arbeidsforholdet/rollen opphørte."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Heltidsekvivalent",
+            "description" : "Arbeidsforholdet/rollens andel eller prosent av en heltidsstilling.",
+            "comment" : "Definisjonen av \"heltid\" kan variere mellom ulike yrker. For eksempel \"0,5\", 50 %\" eller \"deltid\". I noen situasjoner kan det være passende å registrere faktisk antall arbeidstimer i elementet \"Antall arbeidstimer\"."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Kommentar",
+            "description" : "Ytterligere fritekstkommentar om arbeidsforholdet/rollen som ikke passer i andre felt."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse av arbeidsforholdet/rollen."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Ytterligere detaljer",
+            "description" : "Ytterligere detaljer om arbeidsforholdet/rollen.",
+            "comment" : "For eksempel: Forhold på arbeidsplassen eller erfaring fra krigssoner."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Avsatt tid",
+            "description" : "Den avtalte tiden som er satt av til å utføre jobben eller rollen per tidsperiode for dette arbeidsforholdet.",
+            "comment" : "For eksempel: \"3 dager per uke\", \"10 dager per måned\" eller \"2 timer per dag\"."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Heltid",
+            "description" : "Individet bruker lik eller lengre tid på jobben/rollen enn definisjonen av full stilling i lov- eller avtaleverk (tariffavtale)."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Deltid",
+            "description" : "Individet bruker kortere tid på jobben/rollen enn definisjonen av full stilling i lov- eller avtaleverk (tariffavtale)."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Heltidsekvivalent",
+            "description" : "Arbeidsforholdet/rollens andel eller prosent av en heltidsstilling.",
+            "comment" : "Definisjonen av \"heltid\" kan variere mellom ulike yrker. For eksempel \"0,5\", 50 %\" eller \"deltid\". I noen situasjoner kan det være passende å registrere faktisk antall arbeidstimer i elementet \"Antall arbeidstimer\"."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Bransje",
+            "description" : "Klassifisering av bransje eller sektor der individet har arbeidsforholdet/rollen.",
+            "comment" : "For eksempel: \"Jordbruk, skogbruk og fiske\", \"Varehandel\", \"Bygg- og anleggsvirksomhet\". Koding av \"Bransje\" med en terminologi er anbefalt, der det er mulig."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Kommentar",
+            "description" : "Ytterligere fritekstkommentar om arbeidsforholdet/rollen som ikke passer i andre felt."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse av arbeidsforholdet/rollen."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Yrkeskategori",
+            "description" : "Klassifisering av yrket individet har.",
+            "comment" : "Koding med en terminologi er ønskelig om mulig. For eksempel kategorisering i henhold til STYRK-08.\r\nFor eksempel: \"Salgssjef\" eller \"Programvareutvikler\"."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Dato for oppstart",
+            "description" : "Datoen arbeidsforholdet/rollen startet."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Dato for opphør",
+            "description" : "Datoen arbeidsforholdet/rollen opphørte."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Avsatt tid",
+            "description" : "Den avtalte tiden som er satt av til å utføre jobben eller rollen per tidsperiode for dette arbeidsforholdet.",
+            "comment" : "For eksempel: \"3 dager per uke\", \"10 dager per måned\" eller \"2 timer per dag\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status lønnet arbeid",
+            "description" : "Om individet har lønnet eller ulønnet arbeid.",
+            "comment" : "For eksempel: \"Ulønnet\", \"Lønnet\", \"Selvstendig næringsdrivende\" eller \"Frivillig arbeid\". Koding av denne statusen med en terminologi er anbefalt, der det er mulig."
+          }
+        },
+        "it" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "Singola professione svolta o ruolo ricoperto da un individuo durante un determinato periodo di tempo."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Occupazione",
+            "description" : "Singola professione svolta o ruolo ricoperto da un individuo durante un determinato periodo di tempo."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Stato di retribuzione",
+            "description" : "Lo status di un lavoratore in termini di retribuzione o non retribuzione.",
+            "comment" : "Ad esempio:  non retribuito; retribuito; lavoratore autonomo; o volontario. \r\n\r\nSi preferisce, ove possibile, la codifica con una terminologia."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Settore industriale",
+            "description" : "Il settore dell'azienda in cui l'individuo lavora.",
+            "comment" : "Ad esempio: Estrazione, produzione, costruzione.\r\n\r\nSi preferisce, ove possibile, la codifica con una terminologia."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Dettagli sull'azienda",
+            "description" : "Dettagli sul datore di lavoro o sull'azienda."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Qualifica/ruolo",
+            "description" : "La qualifica professionale o il ruolo dell'individuo.",
+            "comment" : "Ad esempio: Amminstratore delegato; Assistente; o Studente. Ciascuna qualifica o ruolo può comprendere più mansioni."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoria professionale",
+            "description" : "Il tipo di lavoro svolto dall'individuo.",
+            "comment" : "La codifica con una terminologia è preferibile, quando possibile, ad esempio attraverso la ISCO-08.\r\n\r\nAd esempio: Responsabile delle vendite o ingegnere del software."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Data di inizio",
+            "description" : "Data in cui l'individuo a iniziato ad esercitare la professione o ricoprire il ruolo."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Data di cessazione",
+            "description" : "Data in cui l'individuo a terminato di esercitare la professione o ricoprire il ruolo."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalente a tempo pieno",
+            "description" : "La porzione di tempo dedicato a questa professione/ruolo rispetto al tempo pieno.  ",
+            "comment" : "L' equivalente a tempo pieno è anche conosciuto come 'FTE' - Full time equivalent.\r\n\r\nAd esempio:  0.5; 50 %; o \"part time\". "
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Commento",
+            "description" : "Note aggiuntive sull'occupazione non rilevate dagli altri campi. "
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descrizione",
+            "description" : "Descrizione narrativa della professione svolta o del ruolo ricoperto dall'individuo. "
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Ulteriori dettagli",
+            "description" : "Ulteriori dettagli sull'occupazione.",
+            "comment" : "Ad esempio: l'ubicazione del posto di lavoro e le condizioni; o esperienza in zone di combattimento."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Orario di lavoro",
+            "description" : "Il tempo assegnato all'individuo per svolgere la professione/ruolo nel periodo specificato.",
+            "comment" : "Ad esempio: '3 giorni a settimana', '10 giorni al mese' o '2 ore al giorno'."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Tempo pieno",
+            "description" : "Il lavoro è svolto per un periodo di tempo pari o superiore a quello ufficialmente considerato a \"tempo pieno\" per l'occupazione."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Tempo parziale",
+            "description" : "Il lavoro è svolto per un periodo di tempo inferiore a quello ufficialmente considerato a \"tempo pieno\" per l'occupazione."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalente a tempo pieno",
+            "description" : "La porzione di tempo dedicato a questa professione/ruolo rispetto al tempo pieno.  ",
+            "comment" : "L' equivalente a tempo pieno è anche conosciuto come 'FTE' - Full time equivalent.\r\n\r\nAd esempio:  0.5; 50 %; o \"part time\". "
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Settore industriale",
+            "description" : "Il settore dell'azienda in cui l'individuo lavora.",
+            "comment" : "Ad esempio: Estrazione, produzione, costruzione.\r\n\r\nSi preferisce, ove possibile, la codifica con una terminologia."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Commento",
+            "description" : "Note aggiuntive sull'occupazione non rilevate dagli altri campi. "
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Qualifica/ruolo",
+            "description" : "La qualifica professionale o il ruolo dell'individuo.",
+            "comment" : "Ad esempio: Amminstratore delegato; Assistente; o Studente. Ciascuna qualifica o ruolo può comprendere più mansioni."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descrizione",
+            "description" : "Descrizione narrativa della professione svolta o del ruolo ricoperto dall'individuo. "
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoria professionale",
+            "description" : "Il tipo di lavoro svolto dall'individuo.",
+            "comment" : "La codifica con una terminologia è preferibile, quando possibile, ad esempio attraverso la ISCO-08.\r\n\r\nAd esempio: Responsabile delle vendite o ingegnere del software."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Data di inizio",
+            "description" : "Data in cui l'individuo a iniziato ad esercitare la professione o ricoprire il ruolo."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Data di cessazione",
+            "description" : "Data in cui l'individuo a terminato di esercitare la professione o ricoprire il ruolo."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Orario di lavoro",
+            "description" : "Il tempo assegnato all'individuo per svolgere la professione/ruolo nel periodo specificato.",
+            "comment" : "Ad esempio: '3 giorni a settimana', '10 giorni al mese' o '2 ore al giorno'."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Stato di retribuzione",
+            "description" : "Lo status di un lavoratore in termini di retribuzione o non retribuzione.",
+            "comment" : "Ad esempio:  non retribuito; retribuito; lavoratore autonomo; o volontario. \r\n\r\nSi preferisce, ove possibile, la codifica con una terminologia."
+          }
+        },
+        "es" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "Un único trabajo o rol llevado a cabo por un individuo durante un periodo de tiempo especificado."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Registro ocupacional",
+            "description" : "Un único trabajo o rol llevado a cabo por un individuo durante un periodo de tiempo especificado."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Estado trabajo remunerado.",
+            "description" : "El estado de un trabajador en términos de ser pagado o no pagado.",
+            "comment" : "Por ejemplo: no remunerado; autoempelado; o voluntario. Se recomienda codificarlo con una terminología donde sea posible."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Sector industrial",
+            "description" : "El tipo de sector industrial en el que trabaja el individuo.",
+            "comment" : "Por ejemplo: Minería, Fabricación, Construcción. Donde sea posible se recomienda codificar con una terminología."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Detalles de la organización",
+            "description" : "Detalles sobre el empleador o institución."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Cargo/rol",
+            "description" : "El cargo, puesto o rol del individuo",
+            "comment" : "Por ejemplo: Director ejecutivo; Cuidador; o Estudiante. Cada uno de estos cargos o roles pueden estar compuestos de muchos deberes."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoría profesional",
+            "description" : "El tipo de trabajo llevado a cabo por el individuo.",
+            "comment" : "Donde sea posible se recomienda codificar con una terminología, tal como CIUO-08"
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Fecha de inicio",
+            "description" : "La fecha en la que un individuo inicia el trabajo o rol."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Fecha de fin",
+            "description" : "La fecha cuando un individuo deja de trabajar en un trabajo o rol."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalencia a tiempo completo",
+            "description" : "El tiempo usado en este trabajo o rol relativo a tiempo completo.",
+            "comment" : "El tiempo completo puede ser también conocido como 'ETC'. Por ejemplo: 0.5; 50 %; o \"tiempo parcial\""
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comentario",
+            "description" : "Narrativa adiciona sobre el registro de ocupación no capturada en otros campos."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descripción",
+            "description" : "Descripción narrativa sobre el trabajo o rol llevado a cabo por el individuo."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Detalles adicionales",
+            "description" : "Información adicional sobre un registro ocupacional.",
+            "comment" : "Por ejemplo: Localización y condiciones del lugar de trabajo; o experiencia en zona de combate."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tiempo asignado",
+            "description" : "La cantidad de tiempo que se le asigna a un individuo para llevar a cabo el trabajo o rol por periodo específico de su registro ocupacional.",
+            "comment" : "Por ejemplo: '3 días a la semana', '10 días al mes' o '2 horas al día'"
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Tiempo completo",
+            "description" : "El individuo lleva a cabo su ocupación por un tiempo igual o superior al oficialmente establecido como 'tiempo completo' para dicha ocupación."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Tiempo parcial",
+            "description" : "El individuo lleva a cabo su ocupación por un tiempo menor al oficialmente establecido como 'tiempo completo' para dicha ocupación."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalencia a tiempo completo",
+            "description" : "El tiempo usado en este trabajo o rol relativo a tiempo completo.",
+            "comment" : "El tiempo completo puede ser también conocido como 'ETC'. Por ejemplo: 0.5; 50 %; o \"tiempo parcial\""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Sector industrial",
+            "description" : "El tipo de sector industrial en el que trabaja el individuo.",
+            "comment" : "Por ejemplo: Minería, Fabricación, Construcción. Donde sea posible se recomienda codificar con una terminología."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comentario",
+            "description" : "Narrativa adiciona sobre el registro de ocupación no capturada en otros campos."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Cargo/rol",
+            "description" : "El cargo, puesto o rol del individuo",
+            "comment" : "Por ejemplo: Director ejecutivo; Cuidador; o Estudiante. Cada uno de estos cargos o roles pueden estar compuestos de muchos deberes."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descripción",
+            "description" : "Descripción narrativa sobre el trabajo o rol llevado a cabo por el individuo."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoría profesional",
+            "description" : "El tipo de trabajo llevado a cabo por el individuo.",
+            "comment" : "Donde sea posible se recomienda codificar con una terminología, tal como CIUO-08"
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Fecha de inicio",
+            "description" : "La fecha en la que un individuo inicia el trabajo o rol."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Fecha de fin",
+            "description" : "La fecha cuando un individuo deja de trabajar en un trabajo o rol."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tiempo asignado",
+            "description" : "La cantidad de tiempo que se le asigna a un individuo para llevar a cabo el trabajo o rol por periodo específico de su registro ocupacional.",
+            "comment" : "Por ejemplo: '3 días a la semana', '10 días al mes' o '2 horas al día'"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Estado trabajo remunerado.",
+            "description" : "El estado de un trabajador en términos de ser pagado o no pagado.",
+            "comment" : "Por ejemplo: no remunerado; autoempelado; o voluntario. Se recomienda codificarlo con una terminología donde sea posible."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "Ein einzelner Job oder eine einzelne Rolle, die von einer Person während eines bestimmten Zeitraums ausgeführt wurde."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Beschäftigung",
+            "description" : "Ein einzelner Job oder eine einzelne Rolle, die von einer Person während eines bestimmten Zeitraums ausgeführt wurde."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status der Erwerbstätigkeit",
+            "description" : "Der Status eines Arbeitnehmers in Bezug auf bezahlt oder unbezahlt.",
+            "comment" : "Zum Beispiel: unbezahlt, bezahlt, Selbstständiger oder Ehrenamtlicher. Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Art der Branche",
+            "description" : "Die Art der Branche, in der die Person arbeitet.",
+            "comment" : "Zum Beispiel: Bergbau, Fertigung, Bau. Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Angaben zur Organisation",
+            "description" : "Angaben zum Arbeitgeber oder zur Einrichtung."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Berufsbezeichnung/Rolle",
+            "description" : "Die Hauptberufsbezeichnung oder die Rolle der Person.",
+            "comment" : "Zum Beispiel: Geschäftsführer, Pflegekraft oder Student. Jede dieser Berufsbezeichnungen oder Rollen kann aus mehreren Aufgaben bestehen."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Art des Jobs",
+            "description" : "Die Art des Jobs der Person.",
+            "comment" : "Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert, z. B. mit ISCO-08.\r\nZum Beispiel: Vertriebsleiter oder Softwareentwickler."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Beginn",
+            "description" : "Das Datum, an dem eine Person mit dem Job oder der Rolle begonnen hat."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Ende",
+            "description" : "Das Datum, an dem eine Person mit einem Job oder einer Rolle aufgehört hat."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Vollzeitäquivalent",
+            "description" : "Die Zeit, die in diesem Job oder dieser Rolle im Verhältnis zur Vollzeit verbracht wurde.",
+            "comment" : "Vollzeitäquivalent kann auch als \"FTE\" (Full-Time Equivalent) bezeichnet werden. Zum Beispiel: 0,5; 50%; oder \"Teilzeit\"."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Kommentar",
+            "description" : "Zusätzliche Beschreibung zur Beschäftigung, die nicht in anderen Feldern erfasst wurde."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Beschreibung",
+            "description" : "Beschreibung des Jobs oder der Rolle der Person."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Zusätzliche Angaben",
+            "description" : "Weitere Angaben zu einer Beschäftigung.",
+            "comment" : "Zum Beispiel: Standort und Bedingungen am Arbeitsplatz oder Kampfzonenerfahrung."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Zugewiesene Zeit",
+            "description" : "Die Zeit, die einer Person für die Ausführung des Jobs oder der Rolle pro festgelegten Zeitraum dieser Beschäftigung zugewiesen wird.",
+            "comment" : "Zum Beispiel: \"3 Tage pro Woche\", \"10 Tage pro Monat\" oder \"2 Stunden pro Tag\"."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Vollzeit",
+            "description" : "Die Person übt diese Beschäftigung mindestens so lange aus, wie diese offiziell als „Vollzeit“ für die Beschäftigung gilt."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Teilzeit",
+            "description" : "Die Person übt diese Beschäftigung weniger als die Zeit aus, die offiziell als \"Vollzeit\" für die Beschäftigung gilt."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Vollzeitäquivalent",
+            "description" : "Die Zeit, die in diesem Job oder dieser Rolle im Verhältnis zur Vollzeit verbracht wurde.",
+            "comment" : "Vollzeitäquivalent kann auch als \"FTE\" (Full-Time Equivalent) bezeichnet werden. Zum Beispiel: 0,5; 50%; oder \"Teilzeit\"."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Art der Branche",
+            "description" : "Die Art der Branche, in der die Person arbeitet.",
+            "comment" : "Zum Beispiel: Bergbau, Fertigung, Bau. Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Kommentar",
+            "description" : "Zusätzliche Beschreibung zur Beschäftigung, die nicht in anderen Feldern erfasst wurde."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Berufsbezeichnung/Rolle",
+            "description" : "Die Hauptberufsbezeichnung oder die Rolle der Person.",
+            "comment" : "Zum Beispiel: Geschäftsführer, Pflegekraft oder Student. Jede dieser Berufsbezeichnungen oder Rollen kann aus mehreren Aufgaben bestehen."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Beschreibung",
+            "description" : "Beschreibung des Jobs oder der Rolle der Person."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Art des Jobs",
+            "description" : "Die Art des Jobs der Person.",
+            "comment" : "Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert, z. B. mit ISCO-08.\r\nZum Beispiel: Vertriebsleiter oder Softwareentwickler."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Beginn",
+            "description" : "Das Datum, an dem eine Person mit dem Job oder der Rolle begonnen hat."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Ende",
+            "description" : "Das Datum, an dem eine Person mit einem Job oder einer Rolle aufgehört hat."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Zugewiesene Zeit",
+            "description" : "Die Zeit, die einer Person für die Ausführung des Jobs oder der Rolle pro festgelegten Zeitraum dieser Beschäftigung zugewiesen wird.",
+            "comment" : "Zum Beispiel: \"3 Tage pro Woche\", \"10 Tage pro Monat\" oder \"2 Stunden pro Tag\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status der Erwerbstätigkeit",
+            "description" : "Der Status eines Arbeitnehmers in Bezug auf bezahlt oder unbezahlt.",
+            "comment" : "Zum Beispiel: unbezahlt, bezahlt, Selbstständiger oder Ehrenamtlicher. Eine Codierung mit einer Terminologie ist nach Möglichkeit wünschenswert."
+          }
+        },
+        "fr" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "Un travail ou un rôle unique exercé par un individu pendant une période de temps déterminée."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Fiche d'occupation",
+            "description" : "Un travail ou un rôle unique exercé par un individu pendant une période de temps déterminée."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Statut d'emploi rémunéré",
+            "description" : "Le statut d'un travailleur en termes de rémunération ou d'absence de rémunération.",
+            "comment" : "Par exemple : non rémunéré, rémunéré, indépendant ou bénévole. Il est souhaitable de coder avec une terminologie, lorsque cela est possible."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Catégorie d'industrie",
+            "description" : "Le type d'industrie dans laquelle l'individu travaille.",
+            "comment" : "Par exemple : Mines, industrie manufacturière, construction. Il est souhaitable de coder avec une terminologie, lorsque cela est possible."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Détails de l'organisation",
+            "description" : "Détails sur l'employeur ou l'institution."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Titre/fonction du poste",
+            "description" : "Le titre principal de l'emploi ou le rôle de l'individu.",
+            "comment" : "Par exemple : Directeur général, soignant ou étudiant. Chacun de ces titres ou rôles peut comporter plusieurs fonctions."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Catégorie d'emploi",
+            "description" : "Le type d'emploi occupé par l'individu.",
+            "comment" : "Il est souhaitable d'utiliser, dans la mesure du possible, une terminologie telle que la CITP-08. Par exemple : Directeur des ventes ou ingénieur en logiciel."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Date de début",
+            "description" : "La date à laquelle l'individu a commencé l'emploi ou la fonction."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Date de fin",
+            "description" : "La date à laquelle une personne a cessé de travailler dans un emploi ou une fonction."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Équivalent temps plein",
+            "description" : "Le temps passé dans cet emploi ou cette fonction par rapport à un emploi à temps plein.",
+            "comment" : "L'équivalent temps plein peut également être appelé \"ETP\". Par exemple : 0,5 ; 50 % ; ou \"temps partiel\"."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Commentaire",
+            "description" : "Une description supplémentaire de l'enregistrement de la profession qui n'a pas été saisie dans d'autres champs."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Description",
+            "description" : "Description de l'emploi ou du la fonction exercé par la personne."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Informations complémentaires",
+            "description" : "Plus de détails sur la fiche d'occupation.",
+            "comment" : "Par exemple : lieu et conditions de travail ; ou expérience dans une zone de combat."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Temps alloué",
+            "description" : "Le temps alloué à une personne pour exercer l'emploi ou la fonction par période spécifiée dans cette fiche de profession.",
+            "comment" : "Par exemple : \"3 jours par semaine\", \"10 jours par mois\" ou \"2 heures par jour\"."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Temps plein",
+            "description" : "La personne exerce cette profession pendant une durée égale ou supérieure à la durée officiellement considérée comme \"à temps plein\" pour cette profession."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Temps partiel",
+            "description" : "L'individu exerce cette profession pendant une durée inférieure à celle qui est officiellement considérée comme \"à temps plein\" pour cette profession"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Équivalent temps plein",
+            "description" : "Le temps passé dans cet emploi ou cette fonction par rapport à un emploi à temps plein.",
+            "comment" : "L'équivalent temps plein peut également être appelé \"ETP\". Par exemple : 0,5 ; 50 % ; ou \"temps partiel\"."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Catégorie d'industrie",
+            "description" : "Le type d'industrie dans laquelle l'individu travaille.",
+            "comment" : "Par exemple : Mines, industrie manufacturière, construction. Il est souhaitable de coder avec une terminologie, lorsque cela est possible."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Commentaire",
+            "description" : "Une description supplémentaire de l'enregistrement de la profession qui n'a pas été saisie dans d'autres champs."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Titre/fonction du poste",
+            "description" : "Le titre principal de l'emploi ou le rôle de l'individu.",
+            "comment" : "Par exemple : Directeur général, soignant ou étudiant. Chacun de ces titres ou rôles peut comporter plusieurs fonctions."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Description",
+            "description" : "Description de l'emploi ou du la fonction exercé par la personne."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Catégorie d'emploi",
+            "description" : "Le type d'emploi occupé par l'individu.",
+            "comment" : "Il est souhaitable d'utiliser, dans la mesure du possible, une terminologie telle que la CITP-08. Par exemple : Directeur des ventes ou ingénieur en logiciel."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Date de début",
+            "description" : "La date à laquelle l'individu a commencé l'emploi ou la fonction."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Date de fin",
+            "description" : "La date à laquelle une personne a cessé de travailler dans un emploi ou une fonction."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Temps alloué",
+            "description" : "Le temps alloué à une personne pour exercer l'emploi ou la fonction par période spécifiée dans cette fiche de profession.",
+            "comment" : "Par exemple : \"3 jours par semaine\", \"10 jours par mois\" ou \"2 heures par jour\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Statut d'emploi rémunéré",
+            "description" : "Le statut d'un travailleur en termes de rémunération ou d'absence de rémunération.",
+            "comment" : "Par exemple : non rémunéré, rémunéré, indépendant ou bénévole. Il est souhaitable de coder avec une terminologie, lorsque cela est possible."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "Um único trabalho ou função desempenhada por um indivíduo durante um período de tempo especificado."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Registro da ocupação",
+            "description" : "Um único trabalho ou função desempenhada por um indivíduo durante um período de tempo especificado."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status de emprego remunerado",
+            "description" : "O status de um trabalhador em termos de ser pago ou não.",
+            "comment" : "Por exemplo: não remunerado; remunerado; trabalhadores por conta própria; ou voluntário. É desejável codificar com uma terminologia, sempre que possível."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Categoria Industrial",
+            "description" : "O tipo de indústria em que o indivíduo trabalha.",
+            "comment" : "Por exemplo: Mineração, fabricação, construção. É desejável codificar com uma terminologia, sempre que possível."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Detalhes organizacionais",
+            "description" : "Detalhes sobre o empregador ou instituição."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Cargo / função",
+            "description" : "O cargo principal ou a função do indivíduo.",
+            "comment" : "Por exemplo: CEO; Cuidador; ou aluno. Cada um desses cargos ou funções pode ser composto de várias ocupações."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoria de Emprego",
+            "description" : "O tipo de trabalho realizado pelo indivíduo.",
+            "comment" : "É desejável codificar com uma terminologia, sempre que possível, como o ISCO-08.\r\nPor exemplo: Gerente de vendas ou engenheiro de software."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Data de início",
+            "description" : "A data em que um indivíduo iniciou o trabalho ou função."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Data de término",
+            "description" : "A data em que um indivíduo deixou de trabalhar em um emprego ou função."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalente a tempo integral",
+            "description" : "O tempo gasto nesse trabalho ou função em relação ao período integral.",
+            "comment" : "O equivalente a tempo integral também pode ser conhecido como 'ETI'. Por exemplo: 0,5; 50%; ou \"tempo parcial\"."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comentários",
+            "description" : "Narrativa adicional sobre o registro de ocupação não registrada em outros campos."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa sobre o trabalho ou função desempenhada pelo indivíduo."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Detalhes adicionais",
+            "description" : "Mais detalhes sobre um registro de ocupação.",
+            "comment" : "Por exemplo: local e condições do local de trabalho; ou experiência na zona de combate."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tempo alocado",
+            "description" : "A quantidade de tempo que um indivíduo é alocado para realizar o trabalho ou função por período especificado desse registro de ocupação.",
+            "comment" : "Por exemplo: '3 dias por semana', '10 dias por mês' ou '2 horas por dia'."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Tempo integral",
+            "description" : "O indivíduo realiza essa ocupação por igual ou superior quantidade de tempo que é oficialmente considerada como 'período integral' para a ocupação."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Tempo parcial",
+            "description" : "O indivíduo realiza essa ocupação por menos do que o tempo considerado oficialmente como 'período integral' para a ocupação."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalente a tempo integral",
+            "description" : "O tempo gasto nesse trabalho ou função em relação ao período integral.",
+            "comment" : "O equivalente a tempo integral também pode ser conhecido como 'ETI'. Por exemplo: 0,5; 50%; ou \"tempo parcial\"."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Categoria Industrial",
+            "description" : "O tipo de indústria em que o indivíduo trabalha.",
+            "comment" : "Por exemplo: Mineração, fabricação, construção. É desejável codificar com uma terminologia, sempre que possível."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comentários",
+            "description" : "Narrativa adicional sobre o registro de ocupação não registrada em outros campos."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Cargo / função",
+            "description" : "O cargo principal ou a função do indivíduo.",
+            "comment" : "Por exemplo: CEO; Cuidador; ou aluno. Cada um desses cargos ou funções pode ser composto de várias ocupações."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa sobre o trabalho ou função desempenhada pelo indivíduo."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoria de Emprego",
+            "description" : "O tipo de trabalho realizado pelo indivíduo.",
+            "comment" : "É desejável codificar com uma terminologia, sempre que possível, como o ISCO-08.\r\nPor exemplo: Gerente de vendas ou engenheiro de software."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Data de início",
+            "description" : "A data em que um indivíduo iniciou o trabalho ou função."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Data de término",
+            "description" : "A data em que um indivíduo deixou de trabalhar em um emprego ou função."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tempo alocado",
+            "description" : "A quantidade de tempo que um indivíduo é alocado para realizar o trabalho ou função por período especificado desse registro de ocupação.",
+            "comment" : "Por exemplo: '3 dias por semana', '10 dias por mês' ou '2 horas por dia'."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status de emprego remunerado",
+            "description" : "O status de um trabalhador em termos de ser pago ou não.",
+            "comment" : "Por exemplo: não remunerado; remunerado; trabalhadores por conta própria; ou voluntário. É desejável codificar com uma terminologia, sempre que possível."
+          }
+        },
+        "pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "Um único trabalho ou função desempenhada por um indivíduo durante um período de tempo especificado."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Registro da ocupação",
+            "description" : "Um único trabalho ou função desempenhada por um indivíduo durante um período de tempo especificado."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status do emprego remunerado",
+            "description" : "O status de um trabalhador em termos de ser pago ou não.",
+            "comment" : "Por exemplo: não remunerado; remunerado; trabalhadores por conta própria; ou voluntário. É desejável codificar com uma terminologia, sempre que possível."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Categoria Industrial",
+            "description" : "O tipo de indústria em que o indivíduo trabalha.\r\n",
+            "comment" : "Por exemplo: Mineração, fabricação, construção. É desejável codificar com uma terminologia, sempre que possível."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Detalhes organizacionais",
+            "description" : "Detalhes sobre o empregador ou instituição."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Cargo / Função",
+            "description" : "O cargo principal ou a função do indivíduo.",
+            "comment" : "Por exemplo: CEO; Cuidador; ou aluno. Cada um desses cargos ou funções pode ser composto de várias ocupações."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoria ocupacional",
+            "description" : "O tipo de ocupação realizada pelo indivíduo.\r\n",
+            "comment" : "É desejável codificar com uma terminologia, sempre que possível, como o ISCO-08. Por exemplo: Gerente de vendas ou engenheiro de software."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Data de início",
+            "description" : "A data em que um indivíduo iniciou o trabalho ou função."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Data de término",
+            "description" : "A data em que um indivíduo deixou de trabalhar em um emprego ou função."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalente a tempo integral",
+            "description" : "O tempo gasto nesse trabalho ou função em relação ao período integral.",
+            "comment" : "O equivalente a tempo integral também pode ser conhecido como 'ETI'. Por exemplo: 0,5; 50%; ou \"tempo parcial\"."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comentários",
+            "description" : "Narrativa adicional sobre o registro de ocupação não registrada em outros campos."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa sobre o trabalho ou função desempenhada pelo indivíduo."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Detalhes adicionais",
+            "description" : "Mais detalhes sobre um registro da ocupação.",
+            "comment" : "Por exemplo: local e condições do local de trabalho; ou experiência na zona de combate."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tempo alocado",
+            "description" : "A quantidade de tempo que um indivíduo é alocado para realizar o trabalho ou função por período especificado desse registro de ocupação.\r\n",
+            "comment" : "Por exemplo: '3 dias por semana', '10 dias por mês' ou '2 horas por dia'."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Tempo integral",
+            "description" : "O indivíduo realiza essa ocupação por igual ou superior quantidade de tempo que é oficialmente considerada como 'período integral' para a ocupação."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Tempo parcial",
+            "description" : "O indivíduo realiza essa ocupação por menos do que o tempo considerado oficialmente como 'período integral' para a ocupação."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Equivalente a tempo integral",
+            "description" : "O tempo gasto nesse trabalho ou função em relação ao período integral.",
+            "comment" : "O equivalente a tempo integral também pode ser conhecido como 'ETI'. Por exemplo: 0,5; 50%; ou \"tempo parcial\"."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Categoria Industrial",
+            "description" : "O tipo de indústria em que o indivíduo trabalha.\r\n",
+            "comment" : "Por exemplo: Mineração, fabricação, construção. É desejável codificar com uma terminologia, sempre que possível."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Comentários",
+            "description" : "Narrativa adicional sobre o registro de ocupação não registrada em outros campos."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Cargo / Função",
+            "description" : "O cargo principal ou a função do indivíduo.",
+            "comment" : "Por exemplo: CEO; Cuidador; ou aluno. Cada um desses cargos ou funções pode ser composto de várias ocupações."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa sobre o trabalho ou função desempenhada pelo indivíduo."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Categoria ocupacional",
+            "description" : "O tipo de ocupação realizada pelo indivíduo.\r\n",
+            "comment" : "É desejável codificar com uma terminologia, sempre que possível, como o ISCO-08. Por exemplo: Gerente de vendas ou engenheiro de software."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Data de início",
+            "description" : "A data em que um indivíduo iniciou o trabalho ou função."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Data de término",
+            "description" : "A data em que um indivíduo deixou de trabalhar em um emprego ou função."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tempo alocado",
+            "description" : "A quantidade de tempo que um indivíduo é alocado para realizar o trabalho ou função por período especificado desse registro de ocupação.\r\n",
+            "comment" : "Por exemplo: '3 dias por semana', '10 dias por mês' ou '2 horas por dia'."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Status do emprego remunerado",
+            "description" : "O status de um trabalhador em termos de ser pago ou não.",
+            "comment" : "Por exemplo: não remunerado; remunerado; trabalhadores por conta própria; ou voluntário. É desejável codificar com uma terminologia, sempre que possível."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Yrke",
+            "description" : "Ett enskilt jobb eller en roll som en person utför under en viss tidsperiod."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Yrkesregistrering",
+            "description" : "Ett enskilt jobb eller en roll som en person utför under en viss tidsperiod."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Betald anställningsstatus",
+            "description" : "Arbetarens status när det gäller att få betalt eller inte.",
+            "comment" : "Till exempel: obetalt; betald; egenföretagare; eller volontär. Kodning med en terminologi är önskvärd, där det är möjligt."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Branschkategori",
+            "description" : "Den typ av bransch där individen arbetar.",
+            "comment" : "Till exempel: Gruvdrift, tillverkning, konstruktion. Kodning med en terminologi är önskvärd, där det är möjligt."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Organisationsinformation",
+            "description" : "Detaljer om arbetsgivaren eller institutionen."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Jobbtitel / roll",
+            "description" : "Individens jobbtitel eller arbetsroll.",
+            "comment" : "Till exempel: verkställande direktör; Vårdgivare; eller student. Var och en av dessa jobbtitlar eller roller kan bestå av flera uppgifter."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Jobbkategori",
+            "description" : "Typ av jobb som individen utför.",
+            "comment" : "Kodning med en terminologi är önskvärt, där det är möjligt, såsom ISCO-08.\r\nTill exempel: försäljningschef eller programvarutekniker."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Startdatum",
+            "description" : "Datumet då en person började jobbet eller rollen."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Upphörandedatum",
+            "description" : "Datumet då en person slutade på ett jobb eller avslutade en roll."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Heltidsekvivalent",
+            "description" : "Tiden i det här jobbet eller rollen i förhållande till heltid.",
+            "comment" : "Heltidsekvivalent kan också kallas 'FTE'. Till exempel: 0,5; 50%; eller \"deltid\"."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Kommentar",
+            "description" : "Ytterligare beskrivning om yrkesregistreringen som inte redan inkluderats."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Beskrivning",
+            "description" : "Berättande beskrivning om jobbet eller rollen som utförs av individen."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Ytterligare detaljer",
+            "description" : "Mer information om en yrkesregistrering.",
+            "comment" : "Till exempel: arbetsplats och arbetsförhållanden; eller stridszonupplevelse."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tilldelad tid",
+            "description" : "Hur lång tid en individ har tilldelats för att utföra jobbet eller rollen per angiven period av detta yrkesregister.",
+            "comment" : "Till exempel: \"3 dagar per vecka\", \"10 dagar per månad\" eller \"2 timmar per dag\"."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Heltid",
+            "description" : "Individen utför ockupationen lika med eller mer än den tid som officiellt betraktas som ”heltid” för ockupationen."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Deltid",
+            "description" : "Individen utför ockupationen under mindre tid än vad som officiellt betraktas som ”heltid” för ockupationen."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Heltidsekvivalent",
+            "description" : "Tiden i det här jobbet eller rollen i förhållande till heltid.",
+            "comment" : "Heltidsekvivalent kan också kallas 'FTE'. Till exempel: 0,5; 50%; eller \"deltid\"."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Branschkategori",
+            "description" : "Den typ av bransch där individen arbetar.",
+            "comment" : "Till exempel: Gruvdrift, tillverkning, konstruktion. Kodning med en terminologi är önskvärd, där det är möjligt."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Kommentar",
+            "description" : "Ytterligare beskrivning om yrkesregistreringen som inte redan inkluderats."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Jobbtitel / roll",
+            "description" : "Individens jobbtitel eller arbetsroll.",
+            "comment" : "Till exempel: verkställande direktör; Vårdgivare; eller student. Var och en av dessa jobbtitlar eller roller kan bestå av flera uppgifter."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Beskrivning",
+            "description" : "Berättande beskrivning om jobbet eller rollen som utförs av individen."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Jobbkategori",
+            "description" : "Typ av jobb som individen utför.",
+            "comment" : "Kodning med en terminologi är önskvärt, där det är möjligt, såsom ISCO-08.\r\nTill exempel: försäljningschef eller programvarutekniker."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Startdatum",
+            "description" : "Datumet då en person började jobbet eller rollen."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Upphörandedatum",
+            "description" : "Datumet då en person slutade på ett jobb eller avslutade en roll."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Tilldelad tid",
+            "description" : "Hur lång tid en individ har tilldelats för att utföra jobbet eller rollen per angiven period av detta yrkesregister.",
+            "comment" : "Till exempel: \"3 dagar per vecka\", \"10 dagar per månad\" eller \"2 timmar per dag\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Betald anställningsstatus",
+            "description" : "Arbetarens status när det gäller att få betalt eller inte.",
+            "comment" : "Till exempel: obetalt; betald; egenföretagare; eller volontär. Kodning med en terminologi är önskvärd, där det är möjligt."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d25ea19d-db32-4977-8dd0-affee30cc0e2",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Therese Lindberg",
+        "organisation" : "Cambio CDS",
+        "email" : "therese.lindberg@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke and Vebjørn Arntzen",
+        "organisation" : "Nasjonal IKT HF, Oslo University Hospital",
+        "email" : "silje.ljosland.bakke@nasjonalikt.no / varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt"
+      },
+      "author" : {
+        "name" : "Danielle Santos Alves",
+        "organisation" : "Federal University of Pernambuco",
+        "email" : "angeldannyalves@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Danielle Santos Alves",
+        "organisation" : "Federal University of Pernambuco",
+        "email" : "angeldannyalves@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Cecilia Mascia",
+        "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+        "email" : "ceclila.mascia@crs4.it"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Bassem Khouzam, Vanessa Pereira",
+        "organisation" : "Medtronic, Better - Pathfinder",
+        "email" : "bassem.khouzam@medtronic.com, vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Diego Bosca",
+        "organisation" : "VeraTech for Health",
+        "email" : "diebosto@veratech.es"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "d8fe4c0c-9ea5-4d9e-b098-7e788db063ab",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "b5346b61f30d70c1703aa38bd1b543cc"
+      },
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere informasjon om en sykemelding til en person.",
+          "keywords" : [ ],
+          "use" : "Bruk for å registrere informasjon om en sykemelding til en person.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about a sick note of an individual.",
+          "keywords" : [ ],
+          "use" : "Use to record details about a sick note of an individual, including start and end date.\r\n\r\nThis archetype has been designed to allow to mark start- and eventually end date when an individual has a medical condition where there are indications of temporal leave from their job. It is intended to be inserted in the Additional details SLOT in CLUSTER.occupation._record or OBSERVATION.occupation_summary, or other archetypes where clinically relevant. An ongoing sickness leave can be assumed if there is a start date and no end date.\r\n\r\nIt the individuals possess multiple jobs, and it is needed to differentiate a graded sickness leave between them, use a separate instance of this archetype for each job.",
+          "misuse" : "Not to be used to make a medical certificate to authorities to underpin sickness benefit. Use appropriate ADMIN Entry archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.sick_note_ous.v1",
+    "differential" : false,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-sick_note_ous-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "occurrences" : "1..1",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "1..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_PROPORTION",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "type",
+                "existence" : "1..1",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 2,
+                    "upper" : 2,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0004",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0005",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "sick_note_ous",
+            "description" : "Information about a sick note of an individual."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Length",
+            "description" : "The duration of the period the individual has been on sick leave."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Description",
+            "description" : "Narrative description of the individuals sick note."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Percentage",
+            "description" : "The percentage or portion of full time the individual is on sick leave."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Start date",
+            "description" : "The start date of the sick leave."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "End date",
+            "description" : "The end date of the sick leave."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Description",
+            "description" : "Narrative description of the individuals sick note."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Percentage",
+            "description" : "The percentage or portion of full time the individual is on sick leave."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "sick_note_ous",
+            "description" : "Information about a sick note of an individual."
+          }
+        },
+        "nb" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Sykemelding",
+            "description" : " Informasjon om en sykemelding til et individ."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Varighet",
+            "description" : "Varigheten av sykemeldinsperioden til individet."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstlig beskrivelse av et individs sykemelding."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Prosentdel",
+            "description" : "Prosentandel eller del av heltid individet er sykmeldt."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Startdato",
+            "description" : "Startdatoen for sykemeldingen."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Sluttdato",
+            "description" : "Sluttdato for sykemeldingen."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstlig beskrivelse av et individs sykemelding."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Prosentdel",
+            "description" : "Prosentandel eller del av heltid individet er sykmeldt."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Sykemelding",
+            "description" : " Informasjon om en sykemelding til et individ."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "f6c7defb-513d-47d5-9a9c-3e473134f9f0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : {
+      "name" : "Natalia Strauch",
+      "organisation" : "Medizinische Hochschule Hannover",
+      "email" : "Strauch.Natalia@mh-hannover.de"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "Silje Ljosland Bakke",
+      "organisation" : "Nasjonal IKT HF"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : {
+      "name" : "Cecilia Mascia",
+      "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+      "email" : "cecilia.mascia@crs4.it"
+    },
+    "otherDetails" : { }
+  } ]
+}
