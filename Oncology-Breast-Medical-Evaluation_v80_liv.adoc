@@ -657,7 +657,7 @@ CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
 a|
 * Høyre bryst (SNOMED-CT: 73056007)
 * Høyre aksilleregion (SNOMED-CT: 19654004)
-* Annet (speisfiser) (SNOMED-CT: 74964007)
+* Annet (spesifiser) (SNOMED-CT: 74964007)
 
 
 Designkommentar:
@@ -885,7 +885,7 @@ Man kan derimot legge inn kun patologi generelt uten å koble til bildediagnosti
 a|
 * Høyre bryst (SNOMED-CT: 73056007)
 * Høyre aksilleregion (SNOMED-CT: 19654004)
-* Annet (speisfiser) (SNOMED-CT: 74964007)
+* Annet (spesifiser) (SNOMED-CT: 74964007)
 
 
 
@@ -1280,7 +1280,7 @@ CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
 a|
 * Venstre bryst (SNOMED-CT: 80248007)
 * Venstre aksilleregion (SNOMED-CT: 20437008)
-* Annet (speisfiser) (SNOMED-CT: 74964007)
+* Annet (spesifiser) (SNOMED-CT: 74964007)
 
 
 Angir om lesjonen er funnet i brystet eller i aksilleregionen, eller annet sted. Hvis valget annet - beskriv i funn/lesjonsID og utvidet beskrivelse funn.
@@ -1470,7 +1470,7 @@ Man kan derimot legge inn kun patologi generelt uten å koble til bildediagnosti
 a|
 * Venstre bryst (SNOMED-CT: 80248007)
 * Venstre aksilleregion (SNOMED-CT: 20437008)
-* Annet (speisfiser) (SNOMED-CT: 74964007)
+* Annet (spesifiser) (SNOMED-CT: 74964007)
 |at0065| 0..1| DV_CODED_TEXT | Spesifikt sted
 a|
 * Sentralt (SNOMED-CT: 110493007)
@@ -1720,7 +1720,7 @@ a|
 CLUSTER: _openEHR-EHR-CLUSTER.laboratory_test_analyte.v1_
 |at0024| 0..1| DV_CODED_TEXT | Analysenavn
 a|
-* Cytologisk test (prosedyre) (NORPAT: 116147009)
+* Cytologisk test (prosedyre) (SNOMED-CT: 116147009)
 
 
 
@@ -2331,7 +2331,7 @@ a|
 CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
 |at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
 a|
-* Annet kroppssted (speisfiser) (SNOMED-CT: 74964007)
+* Annet kroppssted (spesifiser) (SNOMED-CT: 74964007)
 
 
 Designkommentar:
@@ -2383,3 +2383,4 @@ Automatisk fritekstsammendrag av det som står i de strukturerte feltene. Dette 
 // Not supported rmType CODE_PHRASE
 // Not supported rmType CODE_PHRASE
 // Not supported rmType PARTY_PROXY
+
