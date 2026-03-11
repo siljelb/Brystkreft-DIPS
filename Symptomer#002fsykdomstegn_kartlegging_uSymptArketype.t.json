@@ -8,7 +8,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "rejected"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7dec32bfceb8319fe85e882b7fef97f8",
+      "MD5-CAM-1.0.1" : "0059549ed45b96a5170de08945b7a795",
       "PARENT:MD5-CAM-1.0.1" : "0C9C24C7FD5A3E1351E581E1C5A757D1",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -208,10 +208,7 @@
                             "includedExternalTerminologyCodes" : [ {
                               "terminologyId" : "no.onk.kartlegging",
                               "code" : "05",
-                              "value" : "Symptom",
-                              "translations" : {
-                                "nb" : "Symptom"
-                              }
+                              "value" : "Symptom"
                             } ]
                           } ]
                         } ],
@@ -245,31 +242,19 @@
                             "includedExternalTerminologyCodes" : [ {
                               "terminologyId" : "no.onk.symptomer_side",
                               "code" : "162493000",
-                              "value" : "Ingen symptomer",
-                              "translations" : {
-                                "nb" : "Ingen symptomer"
-                              }
+                              "value" : "Ingen symptomer"
                             }, {
                               "terminologyId" : "no.onk.symptomer_side",
                               "code" : "sympt_hø",
-                              "value" : "Symptomer høyre",
-                              "translations" : {
-                                "nb" : "Symptomer høyre"
-                              }
+                              "value" : "Symptomer høyre"
                             }, {
                               "terminologyId" : "no.onk.symptomer_side",
                               "code" : "sympt_ve",
-                              "value" : "Symptomer venstre",
-                              "translations" : {
-                                "nb" : "Symptomer venstre"
-                              }
+                              "value" : "Symptomer venstre"
                             }, {
                               "terminologyId" : "no.onk.symptomer_side",
                               "code" : "sympt_bi",
-                              "value" : "Symptomer begge",
-                              "translations" : {
-                                "nb" : "Symptomer begge"
-                              }
+                              "value" : "Symptomer begge"
                             } ]
                           } ]
                         } ],
@@ -334,8 +319,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "Symptom/sykdomstegn - Legg inn snomedkoder",
                                   "code" : "53430007",
-                                  "value" : "Smerter i mamma",
-                                  "translations" : { }
+                                  "value" : "Smerter i mamma"
                                 } ]
                               } ]
                             } ],
@@ -427,8 +411,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "Symptom/sykdomstegn - Legg inn snomedkoder",
                                   "code" : "55222007",
-                                  "value" : "Ømhet i mamma",
-                                  "translations" : { }
+                                  "value" : "Ømhet i mamma"
                                 } ]
                               } ]
                             } ],
@@ -520,8 +503,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "Symptom/sykdomstegn - Legg inn snomedkoder",
                                   "code" : "54302000",
-                                  "value" : "Sekresjon fra mamillen",
-                                  "translations" : { }
+                                  "value" : "Sekresjon fra mamillen"
                                 } ]
                               } ]
                             } ],
@@ -613,8 +595,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "290077003",
-                                  "value" : "Ødem i mamma",
-                                  "translations" : { }
+                                  "value" : "Ødem i mamma"
                                 } ]
                               } ]
                             } ],
@@ -706,66 +687,39 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "157551000202106",
-                                  "value" : "Palpabel oppfylling i mamma",
-                                  "translations" : {
-                                    "nb" : "Palpabel oppfylling i mamma"
-                                  }
+                                  "value" : "Palpabel oppfylling i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "53430007",
-                                  "value" : "Smerter i mamma",
-                                  "translations" : {
-                                    "nb" : "Smerter i mamma"
-                                  }
+                                  "value" : "Smerter i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "55222007",
-                                  "value" : "ømhet i mamma",
-                                  "translations" : {
-                                    "nb" : "ømhet i mamma"
-                                  }
+                                  "value" : "ømhet i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "54302000",
-                                  "value" : "Sekresjon fra mamillen",
-                                  "translations" : {
-                                    "nb" : "Sekresjon fra mamillen"
-                                  }
+                                  "value" : "Sekresjon fra mamillen"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "290077003",
-                                  "value" : "Ødem i mamma",
-                                  "translations" : {
-                                    "nb" : "Ødem i mamma"
-                                  }
+                                  "value" : "Ødem i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "87386002",
-                                  "value" : "Peau d'Orange",
-                                  "translations" : {
-                                    "nb" : "Peau d'Orange"
-                                  }
+                                  "value" : "Peau d'Orange"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "197681000202106",
-                                  "value" : "hudretraksjon på mamma",
-                                  "translations" : {
-                                    "nb" : "hudretraksjon på mamma"
-                                  }
+                                  "value" : "hudretraksjon på mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "266579006",
-                                  "value" : "betennelse i mamma (mastitt)",
-                                  "translations" : {
-                                    "nb" : "betennelse i mamma (mastitt)"
-                                  }
+                                  "value" : "betennelse i mamma (mastitt)"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "74964007",
-                                  "value" : "Annet (spesifiser)",
-                                  "translations" : {
-                                    "nb" : "Annet (spesifiser)"
-                                  }
+                                  "value" : "Annet (spesifiser)"
                                 } ]
                               } ]
                             } ],
@@ -857,66 +811,39 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "157551000202106",
-                                  "value" : "Palpabel oppfylling i mamma",
-                                  "translations" : {
-                                    "nb" : "Palpabel oppfylling i mamma"
-                                  }
+                                  "value" : "Palpabel oppfylling i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "53430007",
-                                  "value" : "Smerter i mamma",
-                                  "translations" : {
-                                    "nb" : "Smerter i mamma"
-                                  }
+                                  "value" : "Smerter i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "55222007",
-                                  "value" : "ømhet i mamma",
-                                  "translations" : {
-                                    "nb" : "ømhet i mamma"
-                                  }
+                                  "value" : "ømhet i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "54302000",
-                                  "value" : "Sekresjon fra mamillen",
-                                  "translations" : {
-                                    "nb" : "Sekresjon fra mamillen"
-                                  }
+                                  "value" : "Sekresjon fra mamillen"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "290077003",
-                                  "value" : "Ødem i mamma",
-                                  "translations" : {
-                                    "nb" : "Ødem i mamma"
-                                  }
+                                  "value" : "Ødem i mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "87386002",
-                                  "value" : "Peau d'Orange",
-                                  "translations" : {
-                                    "nb" : "Peau d'Orange"
-                                  }
+                                  "value" : "Peau d'Orange"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "197681000202106",
-                                  "value" : "hudretraksjon på mamma",
-                                  "translations" : {
-                                    "nb" : "hudretraksjon på mamma"
-                                  }
+                                  "value" : "hudretraksjon på mamma"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "266579006",
-                                  "value" : "betennelse i mamma (mastitt)",
-                                  "translations" : {
-                                    "nb" : "betennelse i mamma (mastitt)"
-                                  }
+                                  "value" : "betennelse i mamma (mastitt)"
                                 }, {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "74964007",
-                                  "value" : "Annet (spesifiser)",
-                                  "translations" : {
-                                    "nb" : "Annet (spesifiser)"
-                                  }
+                                  "value" : "Annet (spesifiser)"
                                 } ]
                               } ]
                             } ],
@@ -1008,8 +935,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "87386002",
-                                  "value" : "Peau d'Orange",
-                                  "translations" : { }
+                                  "value" : "Peau d'Orange"
                                 } ]
                               } ]
                             } ],
@@ -1101,8 +1027,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "197681000202106",
-                                  "value" : "Hudretraksjon på mamma",
-                                  "translations" : { }
+                                  "value" : "Hudretraksjon på mamma"
                                 } ]
                               } ]
                             } ],
@@ -1194,8 +1119,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "266579006",
-                                  "value" : "Betennelse i mamma (mastitt)",
-                                  "translations" : { }
+                                  "value" : "Betennelse i mamma (mastitt)"
                                 } ]
                               } ]
                             } ],
@@ -1287,8 +1211,7 @@
                                 "includedExternalTerminologyCodes" : [ {
                                   "terminologyId" : "SNOMED-CT",
                                   "code" : "74964007",
-                                  "value" : "Annet (spesifiser)",
-                                  "translations" : { }
+                                  "value" : "Annet (spesifiser)"
                                 } ]
                               } ]
                             } ],
@@ -4380,7 +4303,7 @@
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "944e568c-90f7-30a1-b3c3-22013b91e842",
+  "buildUid" : "eb5c79b1-531e-3ef0-be85-4c8bacca2ee0",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -4581,8 +4504,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "53430007",
-                    "value" : "Smerter i mamma",
-                    "translations" : { }
+                    "value" : "Smerter i mamma"
                   } ]
                 } ]
               } ],
@@ -5829,8 +5751,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "55222007",
-                    "value" : "Ømhet i mamma",
-                    "translations" : { }
+                    "value" : "Ømhet i mamma"
                   } ]
                 } ]
               } ],
@@ -7077,8 +6998,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "54302000",
-                    "value" : "Sekresjon fra mamillen",
-                    "translations" : { }
+                    "value" : "Sekresjon fra mamillen"
                   } ]
                 } ]
               } ],
@@ -8325,8 +8245,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "290077003",
-                    "value" : "Ødem i mamma",
-                    "translations" : { }
+                    "value" : "Ødem i mamma"
                   } ]
                 } ]
               } ],
@@ -9566,8 +9485,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "87386002",
-                    "value" : "Peau d'Orange",
-                    "translations" : { }
+                    "value" : "Peau d'Orange"
                   } ]
                 } ]
               } ],
@@ -10807,8 +10725,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "197681000202106",
-                    "value" : "Hudretraksjon på mamma",
-                    "translations" : { }
+                    "value" : "Hudretraksjon på mamma"
                   } ]
                 } ]
               } ],
@@ -12048,8 +11965,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "266579006",
-                    "value" : "Betennelse i mamma (mastitt)",
-                    "translations" : { }
+                    "value" : "Betennelse i mamma (mastitt)"
                   } ]
                 } ]
               } ],
@@ -13289,8 +13205,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "162408000",
-                    "value" : "General symptom description",
-                    "translations" : { }
+                    "value" : "General symptom description"
                   } ]
                 } ]
               } ],
@@ -14564,10 +14479,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "76752008",
-                    "value" : "mamma",
-                    "translations" : {
-                      "nb" : "mamma"
-                    }
+                    "value" : "mamma"
                   } ]
                 } ]
               } ],
@@ -15319,10 +15231,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "76752008",
-                    "value" : "mamma",
-                    "translations" : {
-                      "nb" : "mamma"
-                    }
+                    "value" : "mamma"
                   } ]
                 } ]
               } ],
