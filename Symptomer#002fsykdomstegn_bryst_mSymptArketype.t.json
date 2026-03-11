@@ -8,7 +8,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "deprecated"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -20,7 +20,9 @@
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
       "MD5-CAM-1.0.1" : "b9050893d8f93a7c4148338d16aadff2",
-      "PARENT:MD5-CAM-1.0.1" : "0C9C24C7FD5A3E1351E581E1C5A757D1"
+      "PARENT:MD5-CAM-1.0.1" : "0C9C24C7FD5A3E1351E581E1C5A757D1",
+      "sem_ver" : "0.1.0",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -3922,7 +3924,7 @@
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "944e568c-90f7-30a1-b3c3-22013b91e842",
+  "buildUid" : "989df0a7-a410-333c-ba07-fb473ec2db5b",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
